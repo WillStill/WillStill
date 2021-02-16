@@ -11,6 +11,10 @@ body {
     margin: 50px;
 }
 
+.backgroundimg {    
+    background-image: url('images/city.jpg');
+}
+
 ol {list-style-type: lower-alpha;
 padding: 5em; 
 }
