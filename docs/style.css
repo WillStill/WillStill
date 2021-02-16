@@ -9,19 +9,35 @@
 }
 
 .header {
-    background-color: #5C9EAD;
-    padding: 0px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(50, 98, 115, .9);
+    font-size: 15px;
+}
+ /* WS 2.16 -- align-items are here incase I choose to make home button bigger than others*/
+
+.header > div {
+    padding: 0px 30px;
+    margin: 0px;
+    font-size: 50px;
 }
 
+/* WS 2.16 -- Flex boxes might not be what I'm looking for. There is a gap between the top of the page and header which
+ * might not be able to be removed. Navigation bars might be what I want.*/
+        /* WS 2.16 -- After implementing basic navigation bars in, they might work but do not fix the issue. The area
+         * above the header still exists. It might be part of the lists I created or backgroundimg.*/
+        /* WS 2.16 -- I Figured it out! It was the margins on the body. The flexboxes will work fine now, lists might have
+         * become more of an issue with CSS if I continued with navigation.*/
+        
 body {
     background-color: #EEEEEE;
     color: #326273;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
-
-
+/* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
 
 ol {
     list-style-type: lower-alpha;
@@ -30,5 +46,6 @@ ol {
 
 div { 
     display: block;
-    text-align: center;
 }
+
+
