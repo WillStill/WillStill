@@ -1,6 +1,16 @@
+.backgroundimg {    
+    position: absolute;
+    background: url(images/city.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
 .header {
     background-color: #5C9EAD;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -8,15 +18,17 @@ body {
     background-color: #EEEEEE;
     color: #326273;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    margin: 50px;
+    margin: 0px;
 }
 
-.backgroundimg {    
-    background-image: url('images/city.jpg');
+
+
+ol {
+    list-style-type: lower-alpha;
+    padding: 5em; 
 }
 
-ol {list-style-type: lower-alpha;
-padding: 5em; 
+div { 
+    display: block;
+    text-align: center;
 }
-
-div {text-align: center}
