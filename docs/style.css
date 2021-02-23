@@ -1,27 +1,34 @@
 .menubar {
     align-items: center;
-    background-color: rgba(50, 98, 115, 1);
-    padding: 10px 15px;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    line-height: 2vw;
+    grid-template-rows: 1fr;
+    flex-wrap: nowrap;
+    background-color: rgba(50, 98, 115, 1);
+    padding: 0px 10px;
+
 }
          
 .menubarlogo {
-    font-size: 40px;
+    justify-self: center;
+    font-size: 50px;
     font-weight: 600;
     color: #FFFFFF;
     text-decoration: none;
-    justify-self: center;
 }
 
 .menubarcontent {
-    justify-content: center;       
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .menubarbuttons {
+    line-height: 50px;
+    justify-self: start;
     font-size: 28px;
-    padding: 0px 50px; 
+    padding: 0px 60px; 
     color: #EEEEEE;
     text-decoration: none;
 }
@@ -37,13 +44,14 @@
     width: 100%;
     top: 0px;
     z-index: -1;
+    filter: brightness(0.5);
 }
-
  
 body {
     background-color: #EEEEEE;
     color: #326273;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: transat,sans-serif;
     margin: 0px;
 }
+
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
