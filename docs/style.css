@@ -1,4 +1,4 @@
-.menubar {
+.menubarcontainer {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -11,13 +11,13 @@
          
 .menubarlogo {
     justify-self: center;
-    font-size: 50px;
+    font-size: 75px;
     font-weight: 600;
     color: #EEEEEE;
     text-decoration: none;
 }
 
-.menubarcontent {
+.menubarbuttonsconatiner {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -27,7 +27,8 @@
 .menubarbuttons {
     line-height: 50px;
     justify-self: start;
-    font-size: 28px;
+    font-size: 50px;
+    font-weight: 600;
     padding: 0px 60px; 
     color: #EEEEEE;
     text-decoration: none;
@@ -35,10 +36,56 @@
 
 /* WS 2.22 ~~ Header is close to end product. Fix the buttons to be aligned in the center. If I really want to I can try to format
  * it with different sized windows. Mobile support would be cool, but should not be primary focus. */
+    /* WS 2.23 ~~ Accessability is important, along with changing window size, find a way to change color of text when hovering. */
+  
+/*    
+@media only screen and (min-width: 640px){
+    .pagecontainer {
+        height: calc(100vh - 58px);
+    }
+}
+ */
+
+.pagecontainer{
+    display: flex;
+    height: calc(100vh - 58px)
+}
+    
+.pagecentercontainer {
+    display: flex;
+    flex-grow: 1;
+    margin: 10vh 10vw 25vh;
+    padding: 60px;    
+    background-color: #EEEEEE;
+}
+
+.pagecenterimage {
+    width: 400px;
+    height: 400px;
+    background-color: #E39774;
+}
+
+.cardimage {
+    padding: 25px;
+}
+
+.cardtext {
+    padding: 0px 25px;
+}
+
+.cardtextheader {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.cardtextbody {
+    font-size: 25px;
+    line-height: 1.6;
+}
 
 .backgroundimg {    
     position: absolute;
-    background: url(images/city.jpg) no-repeat center center fixed;
+    background: url(images/jpg/city.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -54,4 +101,12 @@ body {
     margin: 0px;
 }
 
+p {
+    margin: 0px;
+}
+
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
+
+
+
+
