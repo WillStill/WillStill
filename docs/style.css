@@ -48,7 +48,7 @@
 
 .pagecontainer{
     display: flex;
-    height: calc(100vh - 58px)
+    height: calc(100vh - 120px)
 }
     
 .pagecentercontainer {
@@ -80,7 +80,7 @@
 
 .cardtextbody {
     font-size: 25px;
-    line-height: 1.6;
+    word-wrap: break-word;
 }
 
 .backgroundimg {    
@@ -93,16 +93,52 @@
     z-index: -1;
     filter: brightness(0.5);
 }
- 
+
+.maincontent {
+    word-wrap: break-word;
+}
+
+@media screen and (min-width: 64em){
+    .maincontent{
+        max-width: 64rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+    }
+}
+
+.maincontent h1, .maincontent h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    background-color: #5C9EAD;
+    color: #EEEEEE;
+    font-size: 3em;
+    padding-left: 1rem;
+}
+
+h2 {
+    background-color: #5C9EAD;
+    color: #EEEEEE;
+    font-size: 2em;
+    padding-left: 1rem;
+}
+
 body {
     background-color: #EEEEEE;
     color: #326273;
     font-family: transat,sans-serif;
     margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
 }
 
 p {
     margin: 0px;
+    font-size: 1.25em;
+    border-left: 1em solid #E39774;
+    padding-left: 0.5em;
 }
 
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
