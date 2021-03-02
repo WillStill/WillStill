@@ -1,12 +1,11 @@
 .menubarcontainer {
     align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     flex-wrap: nowrap;
     background-color: rgba(50, 98, 115, 1);
     padding: 0px 10px;
-
+    margin: 0px;
+    justify-content: space-between;
 }
          
 .menubarlogo {
@@ -47,16 +46,26 @@
  */
 
 .pagecontainer{
+    word-wrap: break-word;
+    justify-content: center;
     display: flex;
-    height: calc(100vh - 120px)
 }
-    
+
+@media screen and (min-width: 64em){
+    .pagecentercontainer{
+        max-width: 64rem;
+        padding: 2rem 6rem;
+        margin: 0 auto;
+    }
+}
+
 .pagecentercontainer {
     display: flex;
     flex-grow: 1;
     margin: 10vh 10vw 25vh;
     padding: 60px;    
     background-color: #EEEEEE;
+    max-width: 1300px;
 }
 
 .pagecenterimage {
@@ -83,8 +92,8 @@
     word-wrap: break-word;
 }
 
-.backgroundimg {    
-    position: absolute;
+.homebg {    
+    position: fixed;
     background: url(images/jpg/city.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
@@ -132,12 +141,14 @@ h2 {
 
 body {
     background-color: #EEEEEE;
+    margin: 0px;
+    min-width: 640px;
+    padding: 0px;
     color: #326273;
     font-family: transat,sans-serif;
-    margin: 0px;
-    padding: 0px;
     line-height: 1.6;
-    min-width: 320px;
+    
+    overflow-x: hidden;
 }
 
 /* WS 2.28 ~~ Implement MIN-WIDTH and MAX-WIDTH into body. */
