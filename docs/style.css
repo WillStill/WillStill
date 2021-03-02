@@ -111,6 +111,11 @@
     margin-bottom: 1.5rem;
 }
 
+.borderleft {
+    border-left: 1em solid #E39774;
+    padding-left: 0.5em;
+}
+
 h1 {
     background-color: #5C9EAD;
     color: #EEEEEE;
@@ -140,8 +145,6 @@ body {
 p {
     margin: 0px;
     font-size: 1.25em;
-    border-left: 1em solid #E39774;
-    padding-left: 0.5em;
 }
 
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
