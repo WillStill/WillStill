@@ -10,7 +10,7 @@
          
 .menubarlogo {
     justify-self: center;
-    font-size: 75px;
+    font-size: 4em;
     font-weight: 600;
     color: #EEEEEE;
     text-decoration: none;
@@ -26,9 +26,9 @@
 .menubarbuttons {
     line-height: 50px;
     justify-self: start;
-    font-size: 50px;
+    font-size: 2.3em;
     font-weight: 600;
-    padding: 0px 60px; 
+    padding: 0px 7.5px; 
     color: #EEEEEE;
     text-decoration: none;
 }
@@ -36,14 +36,6 @@
 /* WS 2.22 ~~ Header is close to end product. Fix the buttons to be aligned in the center. If I really want to I can try to format
  * it with different sized windows. Mobile support would be cool, but should not be primary focus. */
     /* WS 2.23 ~~ Accessability is important, along with changing window size, find a way to change color of text when hovering. */
-  
-/*    
-@media only screen and (min-width: 640px){
-    .pagecontainer {
-        height: calc(100vh - 58px);
-    }
-}
- */
 
 .pagecontainer{
     word-wrap: break-word;
@@ -51,21 +43,16 @@
     display: flex;
 }
 
-@media screen and (min-width: 64em){
-    .pagecentercontainer{
-        max-width: 64rem;
-        padding: 2rem 6rem;
-        margin: 0 auto;
+@media (min-width: 960px) {
+    .pagecentercontainer {
+    margin: 10vh 10vw 25vh;
+    padding: 60px;    
     }
 }
 
 .pagecentercontainer {
     display: flex;
-    flex-grow: 1;
-    margin: 10vh 10vw 25vh;
-    padding: 60px;    
     background-color: #EEEEEE;
-    max-width: 1300px;
 }
 
 .pagecenterimage {
