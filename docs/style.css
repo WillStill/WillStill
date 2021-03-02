@@ -132,7 +132,10 @@ body {
     margin: 0px;
     padding: 0px;
     line-height: 1.6;
+    min-width: 320px;
 }
+
+/* WS 2.28 ~~ Implement MIN-WIDTH and MAX-WIDTH into body. */
 
 p {
     margin: 0px;
