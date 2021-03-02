@@ -46,7 +46,7 @@
 @media (min-width: 960px) {
     .pagecentercontainer {
     margin: 10vh 10vw 25vh;
-    padding: 60px;    
+    padding: 3em;    
     }
 }
 
@@ -102,14 +102,29 @@
     }
 }
 
-.maincontent h1, .maincontent h2 {
+.maincontent h1, .maincontent h2, .maincontent h3 {
     margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.maincontent h4, .maincontent h5, .maincontent h6 {
+    margin-top: 0.75rem;
     margin-bottom: 1.5rem;
 }
 
 .borderleft {
     border-left: 1em solid #E39774;
     padding-left: 0.5em;
+}
+
+.gallery {
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40rem;
+    padding: 2rem;
+    display: block;
 }
 
 h1 {
@@ -124,6 +139,10 @@ h2 {
     color: #EEEEEE;
     font-size: 2em;
     padding-left: 1rem;
+}
+
+b {
+    font-weight: 800;
 }
 
 body {
@@ -142,11 +161,18 @@ body {
 
 p {
     margin: 0px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
 
+figure figcaption {
+    text-align: center;
+    font-weight: 600;
+}
 
+ul li {
+    font-size: 1.25rem;
+}
 
 
