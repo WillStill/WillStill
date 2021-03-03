@@ -115,6 +115,7 @@
 .borderleft {
     border-left: 1em solid #E39774;
     padding-left: 0.5em;
+    margin-top: 1em;
 }
 
 .gallery {
