@@ -124,7 +124,17 @@
     margin-left: auto;
     margin-right: auto;
     height: 40rem;
-    padding: 2rem;
+    padding: 2rem .5rem 0px .5rem;
+    display: block;
+}
+
+.gallerysplit {
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 2rem .5rem 0px .5rem;
     display: block;
 }
 
@@ -154,7 +164,6 @@ body {
     color: #326273;
     font-family: transat,sans-serif;
     line-height: 1.6;
-    
     overflow-x: hidden;
 }
 
@@ -165,11 +174,42 @@ p {
     font-size: 1.25rem;
 }
 
+a {
+    margin: 0px;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
 /* WS 2.16 -- Might use overflow to scroll down? Look into that idea.*/
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 50%;
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex {
+    display:flex;
+}
+
+figure {
+    margin: 0px;
+}
 
 figure figcaption {
     text-align: center;
     font-weight: 600;
+    display: block;
+    padding: 1em 0px 2em;
 }
 
 ul li {
