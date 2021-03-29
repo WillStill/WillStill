@@ -34,7 +34,14 @@
 
 @media (min-width: 960px) {
     .pagecentercontainer {
-    margin: 10vh 10vw 25vh;
+    margin: 10vh 0 25vh;
+    padding: 3em;    
+    }
+}
+
+@media (max-width: 960px) {
+    .pagecentercontainer {
+    margin: 10vh 0 25vh;
     padding: 3em;    
     }
 }
