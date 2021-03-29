@@ -83,7 +83,7 @@
     top: 0;
     left: 0;
     filter: brightness(0.5);
-    background: url(images/jpg/city.jpg) no-repeat center center fixed;   
+    background: url(images/jpg/city.jpg) center center / cover;
 }
 
 .maincontent {
