@@ -1,6 +1,6 @@
-.nav {
+#nav {
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     background-color: rgba(50, 98, 115, 1);
     padding: 0px 1%;
@@ -14,16 +14,53 @@
     text-decoration: none;
 }
 
-.icons {
-    display: block;
-    line-height: 2em;
-    width: 3em;
-    padding: .5em 0.1em .5em; 
-    color: #EEEEEE;
+div#icons {
+    font-size: 2.5em;
+    font-family: nav;
+    margin: 0 .1em 0 0;
+    display: flex;
+    min-width: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
 } 
 
-/* WS 3.27 ~~ How do you make svg form a row when they don't accept flex box? Might have to figure out the svg tag.*/
+div#icons a {
+    color: #EEEEEE;
+}
 
+section#nav a:hover {
+    color: #FFFFFF;
+}
+
+div#icons a:nth-child(1) {
+    font-size: 1.3em;
+    margin-left: .0em;
+    margin-bottom: .23em;
+}
+
+div#icons a:nth-child(2) {
+    font-size: 1.3em;
+    margin-left: .05em;
+    margin-bottom: .362em;
+}
+
+div#icons a:nth-child(3) {
+    font-size: 1.3em;
+    margin-left: .05em;
+    margin-bottom: .234em;
+}
+
+div#icons a:nth-child(4) {
+    font-size: 1.3em;
+    margin-left: .05em;
+    margin-bottom: .254em;
+}
+
+div#icons a:nth-child(5) {
+    font-size: 1.3em;
+    margin-left: .05em;
+    margin-bottom: .362em;
+}
 
 .card {
     display: flex;
@@ -100,8 +137,6 @@ p {
 }
 
 a {
-    margin: 0px;
-    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -177,5 +212,10 @@ iframe {
 
 img {
     display: flex;
+}
+
+.handwriting {
+  font-family: nav;
+  font-size: 48px;
 }
 
