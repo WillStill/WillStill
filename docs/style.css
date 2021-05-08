@@ -123,18 +123,7 @@ b {
     font-weight: 800;
 }
 
-body {
-    background-color: #EEEEEE;
-    margin: 0 auto 0 auto;
-    padding: 0px;
-    min-width: 320px;
-    max-width:960px;
-    color: #326273;
-    font-family: transat,sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
-    overflow-y: overlay;
-}
+
 
 /* WS 2.28 ~~ Implement MIN-WIDTH and MAX-WIDTH into body. */
 
@@ -235,3 +224,70 @@ img {
    text-align: center;
    background-color: red;
 }
+
+
+
+
+body {
+    background-color: #FDFDFA;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+    min-width: 360px;
+    max-width:960px;
+    color: #326273;
+    font-family: transat,sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    text-decoration: none;
+}
+
+.buttonbox {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: block;
+    padding-bottom: 48px;
+    padding-right: 40px;
+}
+
+@media (max-width: 360px) {
+    .buttonbox {
+        position: fixed;
+        left: 50%;
+        margin-left: -145px;
+        padding-bottom: 24px;
+        padding-right: 36px;
+    }
+}
+
+.abouta {
+    position: relative;
+    align-items: flex-end;
+    display: flex;
+    height: 36px;
+    width: 260px;
+    margin: 15px;
+    padding: 0;
+    flex-direction: column;
+    font-family: transat,sans-serif;
+    color: #1D1A11;
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.abouta._2 {
+    margin-top: ;
+}
+
+.abouta._3 {
+    margin-top: ;
+}
+
+@media (max-width: 360px){
+    .abouta {
+        font-size: 26px;
+    }
+}
+
