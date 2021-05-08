@@ -271,10 +271,11 @@ body {
     margin: 15px;
     padding: 0;
     flex-direction: column;
-    font-family: transat,sans-serif;
+    font-family: buttonbox;
     color: #1D1A11;
-    font-size: 22pt;
+    font-size: 27pt;
     font-weight: 600;
+    background-color: red;
 }
 
 .abouta._2 {
@@ -287,7 +288,7 @@ body {
 
 @media (max-width: 360px){
     .abouta {
-        font-size: 26px;
+        font-size: 25px;
     }
 }
 
