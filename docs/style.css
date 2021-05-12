@@ -252,7 +252,7 @@ body {
     padding-right: 40px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 479px) {
     .buttonbox {
         position: fixed;
         left: 50%;
@@ -271,24 +271,24 @@ body {
     margin: 15px;
     padding: 0;
     flex-direction: column;
-    font-family: buttonbox;
+    font-family: bfont;
     color: #1D1A11;
     font-size: 27pt;
     font-weight: 600;
-    background-color: red;
 }
 
 .abouta._2 {
-    margin-top: ;
+    margin-top: 0px;
 }
 
 .abouta._3 {
-    margin-top: ;
+    margin-top: 20px;
+    font-size: 28pt;
 }
 
-@media (max-width: 360px){
+@media (max-width: 479px){
     .abouta {
-        font-size: 25pt;
+        
     }
 }
 

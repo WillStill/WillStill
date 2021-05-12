@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'buttonbox';
-  src:  url('fonts/buttonbox.eot?x68qmg');
-  src:  url('fonts/buttonbox.eot?x68qmg#iefix') format('embedded-opentype'),
-    url('fonts/buttonbox.ttf?x68qmg') format('truetype'),
-    url('fonts/buttonbox.woff?x68qmg') format('woff'),
-    url('fonts/buttonbox.svg?x68qmg#buttonbox') format('svg');
+  font-family: 'bfont';
+  src:  url('fonts/bfont.eot?qrl3fe');
+  src:  url('fonts/bfont.eot?qrl3fe#iefix') format('embedded-opentype'),
+    url('fonts/bfont.ttf?qrl3fe') format('truetype'),
+    url('fonts/bfont.woff?qrl3fe') format('woff'),
+    url('fonts/bfont.svg?qrl3fe#bfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'buttonbox' !important;
+  font-family: 'bfont' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow:before {
+  content: "\32";
+}
+.icon-brushb:before {
+  content: "\34";
+}
+.icon-brusht:before {
+  content: "\33";
+}
 .icon-tie:before {
   content: "\31";
 }
