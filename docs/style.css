@@ -278,7 +278,7 @@ body {
 }
 
 .abouta._2 {
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .abouta._3 {
@@ -292,3 +292,27 @@ body {
     }
 }
 
+.upbutton{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 3;
+    margin-top: 3vw;
+    margin-right: 5vw;
+    display: block;
+    font-family: 'bfont';
+    font-weight: 600;
+    color: #1D1A11;
+    font-size: 50pt;
+}
+
+@media (max-width: 479px){
+    .upbutton {
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+}
+
+a:hover {
+    color: #e60000;
+}
