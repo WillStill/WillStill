@@ -388,12 +388,12 @@ a:hover {
 
 .vision {
     height: 100vh;
-    background-color: #F3F4F3;
+    background: linear-gradient(200deg, #fdfdfa, #ecf5e9, #d3eee0, #b5e7e1, #99deea)
 }
 
 .projects {
     height: 200vh;
-    background: linear-gradient(0deg, #5c9ead 0%, #a1c3ac 35%, #fdfdfa 100%);
+    background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa)
 }
 
 html {
