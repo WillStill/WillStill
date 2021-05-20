@@ -125,16 +125,6 @@ b {
 
 
 
-/* WS 2.28 ~~ Implement MIN-WIDTH and MAX-WIDTH into body. */
-
-p {
-    margin: 0px;
-    font-size: 1.25rem;
-}
-
-a {
-    text-decoration: none;
-}
 
  h1, h2, h3 {
     margin-top: 2rem;
@@ -207,10 +197,6 @@ iframe {
     padding-top: 1rem;
 }
 
-img {
-    display: flex;
-}
-
 .handwriting {
   font-family: nav;
   font-size: 48px;
@@ -264,6 +250,7 @@ body {
         position: fixed;
         left: 50%;
         bottom: 67px;
+        z-index: 2;
         margin-left: -145px;
         padding-bottom: 24px;
         padding-right: 36px;
@@ -345,7 +332,7 @@ a {
 
 a:hover {
     color: #e60000;
-}
+}    
 
 .dropbtn {
     position: fixed;
@@ -353,6 +340,7 @@ a:hover {
     bottom: 15px;
     margin-left: -23.735px;
     color: #1D1A11;
+    z-index: 2;
     font-size: 27pt;
     font-weight: 600;
     font-family: bfont;
@@ -365,6 +353,8 @@ a:hover {
 }
 
 .dropbtn_clicked {
+    color: #e60000;
+    z-index: 2;
     font-family: bfont;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -382,20 +372,77 @@ a:hover {
     display: inline-block;
 }
 
-.intro {
+#intro {
     height: 100vh;
 }
 
-.vision {
+#vision {
     height: 100vh;
     background: linear-gradient(200deg, #fdfdfa, #ecf5e9, #d3eee0, #b5e7e1, #99deea)
 }
 
-.projects {
+
+
+
+
+
+
+#projects {
+    position: relative;
     height: 200vh;
     background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa)
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.pcontain {
+    height: 200vh;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 479px) {
+    .pcontain {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.project {
+    float: left;
+    
+}
+
+@media (min-width: 480px) {
+    .project {
+        width: 25.33%;
+        margin: 0 4%;
+    }
+}
+
+@media (max-width: 479px) {
+    .project {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .project img {
+        cursor: pointer;
+        width: 100%;
+        height: auto;
+        margin: 10vh 0 0 0;
+        float: left;
+    }
+}
+
+@media (max-width: 479px) {
+    .project img {
+        width: 100%;
+        height: auto;
+        margin: 10% 0 -2% 0; 
+    }
 }
