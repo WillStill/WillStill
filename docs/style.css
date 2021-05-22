@@ -418,7 +418,6 @@ html {
     margin-right: auto;
 }
 
-/* Container of all text and image containers */
 @media (max-width: 479px) {
     .pcontain {
         margin-left: auto;
@@ -436,6 +435,8 @@ html {
     bottom: 0px;
     line-height: 1;
     display: inline-block;
+    
+
 }
 
 @media (min-width: 480px) {
@@ -452,57 +453,101 @@ html {
     }
 }
 
+.project:hover {
+    cursor: pointer;
+}
+
 /* Teaser image */
 .project img {
     float: left;
     height: auto;
     width: 100%;
+    
+    /* Blur */
+    -webkit-transition: -webkit-filter 400ms ease;
+    -moz-transition: -moz-filter 400ms ease;
+    -ms-transition: -ms-filter 400ms ease;
+    -o-transition: -o-filter 400ms ease;
+    transition: filter 400ms ease;
+    
+    /* Scale Image */
+    -webkit-transition: -webkit-transform 400ms ease;
+    -moz-transition: -moz-transform 400ms ease;
+    -ms-transition: -ms-transform 400ms ease;
+    -o-transition: -o-transform 400ms ease;
+    transition: transform 400ms ease;
 }
 
 @media (min-width: 480px) {
     .project img {
-        cursor: pointer;       
+        cursor: pointer; 
     }
 }
 
-@media (max-width: 479px) {
-    .project img {
-         
-    }
-}
+.project:hover img {
+    /* Blur Image */
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+    filter: url(#blur);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+    
+    /* Scale Image */
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+}   
+
+
+
 
 
 /* Text that appears on hover over image */
-.project div {    
+.text {    
     position: absolute;
-    opacity: 0;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    -webkit-transition: opacity 400ms ease; 
-    transition: opacity 400ms ease;
+    
+    /* Show Text, Scale Text */
+    opacity: 0;
+    -webkit-transition: -webkit-filter 400ms ease;
+    -moz-transition: -moz-filter 400ms ease;
+    -o-transition: -o-filter 400ms ease;
+    transition: all 700ms ease;
 }
 
 @media (min-width:480px) {
-    .project div {
+    .text {
         font-size: 6vw;
         letter-spacing: .25vw;
     }
 }
 
 @media (max-width:480px) {
-    .project div {
+    .text {
         font-size: 24vw;
         letter-spacing: 1vw;
     }
 }
 
-.project:hover {
-    cursor: pointer;
+.text:hover {
+    /* Scale Text */
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.1);
 }
 
-.project:hover div{
-    opacity: 1; 
+.project:hover .text {
+    /* Show Text */
+    -webkit-opacity: 1;
+    opacity: 1;
 }
