@@ -393,12 +393,6 @@ a {
     background: linear-gradient(200deg, #fdfdfa, #ecf5e9, #d3eee0, #b5e7e1, #99deea)
 }
 
-
-
-
-
-
-
 #projects {
     position: relative;
     height: 200vh;
@@ -435,8 +429,6 @@ html {
     bottom: 0px;
     line-height: 1;
     display: inline-block;
-    
-
 }
 
 @media (min-width: 480px) {
@@ -464,18 +456,20 @@ html {
     width: 100%;
     
     /* Blur */
+    transition: filter 400ms ease;
     -webkit-transition: -webkit-filter 400ms ease;
     -moz-transition: -moz-filter 400ms ease;
     -ms-transition: -ms-filter 400ms ease;
     -o-transition: -o-filter 400ms ease;
-    transition: filter 400ms ease;
+    
     
     /* Scale Image */
+    transition: transform 600ms ease;
     -webkit-transition: -webkit-transform 400ms ease;
     -moz-transition: -moz-transform 400ms ease;
     -ms-transition: -ms-transform 400ms ease;
     -o-transition: -o-transform 400ms ease;
-    transition: transform 400ms ease;
+    
 }
 
 @media (min-width: 480px) {
@@ -486,25 +480,20 @@ html {
 
 .project:hover img {
     /* Blur Image */
+    filter: blur(2px);
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -ms-filter: blur(2px);
     -o-filter: blur(2px);
-    filter: blur(2px);
-    filter: url(#blur);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
     
     /* Scale Image */
+    transform: scale(1.03);
     -webkit-transform: scale(1.03);
     -moz-transform: scale(1.03);
     -ms-transform: scale(1.03);
     -o-transform: scale(1.03);
-    transform: scale(1.03);
+    
 }   
-
-
-
-
 
 /* Text that appears on hover over image */
 .text {    
@@ -520,7 +509,7 @@ html {
     -webkit-transition: -webkit-filter 400ms ease;
     -moz-transition: -moz-filter 400ms ease;
     -o-transition: -o-filter 400ms ease;
-    transition: all 700ms ease;
+    transition: all 500ms ease;
 }
 
 @media (min-width:480px) {
