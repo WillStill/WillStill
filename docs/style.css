@@ -455,20 +455,15 @@ html {
     height: auto;
     width: 100%;
     
-    /* Blur */
-    transition: filter 400ms ease;
-    -webkit-transition: -webkit-filter 400ms ease;
-    -moz-transition: -moz-filter 400ms ease;
-    -ms-transition: -ms-filter 400ms ease;
-    -o-transition: -o-filter 400ms ease;
+    /* Blur, Scale Image */
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
     
     
-    /* Scale Image */
-    transition: transform 600ms ease;
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    -ms-transition: -ms-transform 400ms ease;
-    -o-transition: -o-transform 400ms ease;
+
     
 }
 
@@ -506,9 +501,9 @@ html {
     
     /* Show Text, Scale Text */
     opacity: 0;
-    -webkit-transition: -webkit-filter 400ms ease;
-    -moz-transition: -moz-filter 400ms ease;
-    -o-transition: -o-filter 400ms ease;
+    -webkit-transition: -webkit-filter 500ms ease;
+    -moz-transition: -moz-filter 500ms ease;
+    -o-transition: -o-filter 500ms ease;
     transition: all 500ms ease;
 }
 
