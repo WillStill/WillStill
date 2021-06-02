@@ -414,6 +414,8 @@ html {
   }
 }
 
+
+
 .project {
   position: relative;
   float: left;
@@ -423,6 +425,7 @@ html {
   bottom: 0px;
   line-height: 1;
   display: inline-block;
+  opacity: 0;
 }
 
 @media (min-width: 480px) {
@@ -489,7 +492,7 @@ html {
   }
 }
 
-@media (max-width:480px) {
+@media (max-width:479px) {
   .text {
     font-size: 24vw;
     letter-spacing: 1vw;
@@ -511,7 +514,7 @@ html {
   opacity: 1;
 }
 
-@media (max-width:480px) {
+@media (max-width:479px) {
   .text.show {
     opacity: 1;
 
@@ -529,7 +532,7 @@ html {
   }
 }
 
-@media (max-width:480px) {
+@media (max-width:479px) {
   .project img.show {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -550,4 +553,74 @@ html {
     -o-transition: all 400ms ease;
   }
 }
-/* intersection observer acts funky when */
+/* intersection observer acts funky when viewport positioned in places*/
+
+
+@keyframes fade-in-menu { 
+    0% {
+    opacity: 0
+    transform: translateX(-3rem) rotate(5deg);
+    -webkit-transform: translateX(-3rem) rotate(5deg);
+    -moz-transform: translateX(-3rem) rotate(5deg);
+    -ms-transform: translateX(-3rem) rotate(5deg);
+    -o-transform: translateX(-3rem) rotate(5deg);
+    }
+	100% {opacity: 1;}
+}
+
+@media (min-width:480px) {
+    .pcontain.show a{
+        -webkit-animation: fade-in-menu 1000ms ease-out;
+        -moz-animation: fade-in-menu 1000ms ease-out;
+        animation: fade-in-menu 1000ms ease-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(1) {
+    	-webkit-animation-delay: 100ms;
+    	-moz-animation-delay: 100ms;
+    	animation-delay: 100ms;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(2) {
+    	-webkit-animation-delay: 200ms;
+    	-moz-animation-delay: 200ms;
+    	animation-delay: 200ms;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(3) {
+    	-webkit-animation-delay: 300ms;
+    	-moz-animation-delay: 300ms;
+    	animation-delay: 300ms;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(4) {
+    	-webkit-animation-delay: 400ms;
+    	-moz-animation-delay: 400ms;
+    	animation-delay: 400ms;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(5) {
+    	-webkit-animation-delay: 500ms;
+    	-moz-animation-delay: 500ms;
+    	animation-delay: 500ms;
+    }
+}
+
+@media (min-width:480px) {
+    .pcontain.show a:nth-child(6) {
+    	-webkit-animation-delay: 600ms;
+    	-moz-animation-delay: 600ms;
+    	animation-delay: 600ms;
+    }
+}

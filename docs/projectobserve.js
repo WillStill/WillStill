@@ -1,7 +1,7 @@
 const options = {
   threshold: [0.8]
 };
-const target = document.querySelectorAll('.observe');
+const target = document.querySelectorAll('.jsobserve');
 
 function handleIntersection(entries) {
   entries.map((entry) => {
