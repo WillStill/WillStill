@@ -126,29 +126,7 @@ b {
 
 
 
- h1, h2, h3 {
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-}
 
-h4, h5, h6 {
-    margin-top: 0.75rem;
-    margin-bottom: 1.5rem;
-}
-
-h1 {
-    background-color: #5C9EAD;
-    color: #EEEEEE;
-    font-size: 3em;
-    padding-left: 1rem;
-}
-
-h2 {
-    background-color: #5C9EAD;
-    color: #EEEEEE;
-    font-size: 2em;
-    padding-left: 1rem;
-}
 
 .borderleft {
     border-left: 1em solid #E39774;
@@ -225,11 +203,7 @@ iframe {
 
 
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 body {
   margin: 0px;
@@ -390,6 +364,7 @@ a {
 }
 
 .self {
+    position: absolute;
     height: 100vh;
     width: 100%;
     object-position: 25% 0;
@@ -397,16 +372,29 @@ a {
 }
 
 .notself {
-    
-    position: absolute;
     height: 100vh;
-    width: 33vw;
-    bottom: 0;
-    right: 0;
-    
-    background-position: 50% 0;
-    background-size: cover;
-    
+    width: 100%;
+    object-position: 25% 0;
+    object-fit: cover;
+}
+
+.introtext {
+    position: absolute;
+    padding: 2%;
+    min-width: 325px;
+    max-width: 35vw;
+    bottom: 15vh;
+    right: 17vw;
+}
+
+.introtitle {
+
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+
+}
+
+.introdes {
+
 }
 
 #vision {
