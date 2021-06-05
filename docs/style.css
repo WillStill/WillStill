@@ -225,7 +225,11 @@ iframe {
 
 
 
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body {
   margin: 0px;
@@ -377,11 +381,32 @@ a {
 
 .dropup {
   position: relative;
-  display: inline-block;
 }
 
 #intro {
+  position: relative;
   height: 100vh;
+  top: 0;
+}
+
+.self {
+    height: 100vh;
+    width: 100%;
+    object-position: 25% 0;
+    object-fit: cover;
+}
+
+.notself {
+    
+    position: absolute;
+    height: 100vh;
+    width: 33vw;
+    bottom: 0;
+    right: 0;
+    
+    background-position: 50% 0;
+    background-size: cover;
+    
 }
 
 #vision {
@@ -414,7 +439,11 @@ html {
   }
 }
 
-
+@media (min-width: 1972px) {
+    .pcontain {
+        max-width: 1480px;
+    }
+}
 
 .project {
   position: relative;
@@ -478,6 +507,8 @@ html {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  font-size: 6vw;
+  letter-spacing: 0.25vw;
   transition: transform 400ms ease, opacity 400ms ease;
   -webkit-transition: -webkit-transform 400ms ease, -webkit-opacity 500ms ease;
   -moz-transition: -moz-transform 400ms ease, opacity 500ms ease;
@@ -485,16 +516,16 @@ html {
   -o-transition: -o-transform 400ms ease, opacity 500ms ease;
 }
 
-@media (min-width:480px) {
+@media (min-width:1972px) {
   .text {
-    font-size: 6vw;
+    font-size: 96pt;
     letter-spacing: 0.25vw;
   }
 }
 
 @media (max-width:479px) {
   .text {
-    font-size: 24vw;
+    font-size: 18vw;
     letter-spacing: 1vw;
   }
 }
@@ -514,7 +545,7 @@ html {
   opacity: 1;
 }
 
-@media (max-width:479px) {
+@media (max-width:1024px) {
   .text.show {
     opacity: 1;
 
@@ -532,7 +563,7 @@ html {
   }
 }
 
-@media (max-width:479px) {
+@media (max-width:1024px) {
   .project img.show {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -559,11 +590,6 @@ html {
 @keyframes fade-in-menu { 
     0% {
     opacity: 0;
-    transform: translateX(-3rem) rotate(5deg);
-    -webkit-transform: translateX(-3rem) rotate(5deg);
-    -moz-transform: translateX(-3rem) rotate(5deg);
-    -ms-transform: translateX(-3rem) rotate(5deg);
-    -o-transform: translateX(-3rem) rotate(5deg);
     }
 	100% {
 	opacity: 1;
@@ -578,10 +604,9 @@ html {
 
 @media (min-width:480px) {
     .pcontain.show a{
-        
-        -webkit-animation: fade-in-menu 1000ms ease-out forwards;
-        -moz-animation: fade-in-menu 1000ms ease-out forwards;
-        animation: fade-in-menu 1000ms ease-out forwards;
+        -webkit-animation: fade-in-menu 1250ms ease-out forwards;
+        -moz-animation: fade-in-menu 1250ms ease-out forwards;
+        animation: fade-in-menu 1250ms ease-out forwards;
         animation-fill-mode: forwards;
     }
 }
@@ -598,7 +623,7 @@ html {
     .pcontain.show a:nth-child(2) {
     	-webkit-animation-delay: 200ms;
     	-moz-animation-delay: 200ms;
-    	animation-delay: 200ms;
+    	animation-delay: 250ms;
     }
 }
 
@@ -606,7 +631,7 @@ html {
     .pcontain.show a:nth-child(3) {
     	-webkit-animation-delay: 300ms;
     	-moz-animation-delay: 300ms;
-    	animation-delay: 300ms;
+    	animation-delay: 400ms;
     }
 }
 
@@ -614,7 +639,7 @@ html {
     .pcontain.show a:nth-child(4) {
     	-webkit-animation-delay: 400ms;
     	-moz-animation-delay: 400ms;
-    	animation-delay: 400ms;
+    	animation-delay: 550ms;
     }
 }
 
@@ -622,7 +647,7 @@ html {
     .pcontain.show a:nth-child(5) {
     	-webkit-animation-delay: 500ms;
     	-moz-animation-delay: 500ms;
-    	animation-delay: 500ms;
+    	animation-delay: 700ms;
     }
 }
 
@@ -630,6 +655,6 @@ html {
     .pcontain.show a:nth-child(6) {
     	-webkit-animation-delay: 600ms;
     	-moz-animation-delay: 600ms;
-    	animation-delay: 600ms;
+    	animation-delay: 850ms;
     }
 }
