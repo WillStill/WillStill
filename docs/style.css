@@ -407,9 +407,9 @@ a {
     }    
 }
 
-@media (min-width: 960px){
+@media (min-width: 1281px){
     .introtext {
-        padding: 15vh 11vw 15vh 23.5vw;
+        padding: 15vh 11vw 15vh 35vw;
     }    
 }
 
@@ -432,7 +432,7 @@ a {
     }    
 }
 
-@media (min-width: 960px){
+@media (min-width: 1281px){
     .introtext h1 {
         font-size: 4.3em;
     }    
@@ -455,14 +455,12 @@ a {
     }    
 }
 
-@media (min-width: 960px){
+@media (min-width: 1281px){
     .introdes {
-        padding-top: .2em;
+        padding-top: .5em;
         font-size: 1.7em;
-        margin: 0.5em 0;
     }    
 }
-
 
 #vision {
   height: 100vh;
