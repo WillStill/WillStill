@@ -203,8 +203,6 @@ iframe {
 
 
 
-
-
 body {
   margin: 0px;
   background-color: #FDFDFA;
@@ -220,62 +218,95 @@ body {
   text-decoration: none;
 }
 
+
+
+
+
+
+
+
+
+
 .btnbox {
   position: fixed;
   right: 0px;
   bottom: 0px;
   z-index: 2;
   display: block;
-  padding-bottom: 3.15vh;
-  padding-right: 40px;
+
 }
 
-@media (max-width: 959px) {
+@media (max-width: 480px) {
   .btnbox {
-    display: none;
+  padding-bottom: 3.15vh;
+  padding-right: 4vw;
   }
 }
 
-.tbtnbox {
-  position: fixed;
-  left: 50%;
-  bottom: 67px;
-  z-index: 2;
-  margin-left: -145px;
-  padding-bottom: 24px;
-  padding-right: 36px;
-  visibility: hidden;
+@media (min-width: 481px) {
+  .btnbox {
+  padding-bottom: 3.15vh;
+  padding-right: 40px;
+  }
 }
 
 @media (min-width: 960px) {
-  .tbtnbox {
-    display: none;
+  .btnbox {
+    padding-bottom: 30px;
+    padding-right: 40px;
   }
 }
 
 .abouta {
   position: relative;
-  align-items: flex-end;
   display: flex;
-  height: 36px;
-  width: 260px;
-  margin: 15px;
+  align-items: flex-end;
   padding: 0;
   flex-direction: column;
   font-family: bfont;
-  color: #1D1A11;
-  font-size: 27pt;
-  font-weight: 600;
 }
 
-.abouta._2 {
-  margin-top: 15px;
+@media (max-width: 480px) {
+  .abouta {
+    font-size: 0.7em;
+  }
 }
 
-.abouta._3 {
-  margin-top: 20px;
-  font-size: 28pt;
+@media (min-width: 481px){
+    .abouta {
+        font-size: 0.9em;
+    }    
 }
+
+@media (max-width: 959px) {
+  .abouta {
+    margin: 0.3vh 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .abouta{
+
+    height: 36px;
+    width: 260px;
+    margin: 15px;
+    font-size: 27pt;
+  }
+}
+
+
+@media (min-width: 960px) {
+    .abouta._2 {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 960px) {
+    .abouta._3 {
+        margin-top: 20px;
+    }
+}
+
 
 .sidebar {
   position: fixed;
@@ -302,7 +333,7 @@ body {
 
 @media (max-width: 480px) {
   .upbutton {
-    font-size: 12vw;
+    font-size: 1.5em;
     margin-right: 20px;
     margin-top: 3vw;
   }
@@ -310,9 +341,9 @@ body {
 
 @media (min-width: 481px){
     .upbutton {
-        font-size: 9vh;
+        font-size: 1.7em;
         margin-right: 5vw;
-        margin-top: 0.5vw;
+        margin-top: 1.5vw;
     }    
 }
 
@@ -324,67 +355,15 @@ body {
     }    
 }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #1d1a11;
-}
-
 .abouta:hover,
 .upbutton:hover {
   color: #e60000;
 }
 
-.dropbtnbox {
-    display: flex;
-    justify-content: center;
-}
-
-.dropbtn {
-  position: fixed;
-  bottom: 15px;
-  color: #1D1A11;
-  z-index: 2;
-  font-size: 9vw;
-  font-weight: 600;
-  font-family: bfont;
-  -webkit-transition: -webkit-transform 400ms ease;
-  transition: -webkit-transform 400ms ease;
-  transition: transform 400ms ease;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.dropbtn_clicked {
-  color: #e60000;
-  z-index: 2;
-  font-family: bfont;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-@media (max-width: 480px) {
-  .dropbtn {
-    font-size: 7vw;
-  }
-}
-
-@media (min-width: 481px){
-    .dropbtn {
-        font-size: 4.5vh;
-    }    
-}
-
-@media (min-width: 960px) {
-  .dropbtn {
-    display: none;
-  }
-}
-
-.dropup {
-  position: relative;
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #1d1a11;
 }
 
 #intro {
@@ -430,7 +409,7 @@ a {
 
 @media (min-width: 960px){
     .introtext {
-        padding: 15vh 11vw 15vh 35vw;
+        padding: 15vh 11vw 15vh 23.5vw;
     }    
 }
 
@@ -455,7 +434,7 @@ a {
 
 @media (min-width: 960px){
     .introtext h1 {
-        font-size: 5.7em;
+        font-size: 4.3em;
     }    
 }
 
@@ -478,8 +457,9 @@ a {
 
 @media (min-width: 960px){
     .introdes {
-        padding-top: .5em;
-        font-size: 1.9em;
+        padding-top: .2em;
+        font-size: 1.7em;
+        margin: 0.5em 0;
     }    
 }
 
