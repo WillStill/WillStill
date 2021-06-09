@@ -226,7 +226,7 @@ body {
   bottom: 0px;
   z-index: 2;
   display: block;
-  padding-bottom: 48px;
+  padding-bottom: 3.15vh;
   padding-right: 40px;
 }
 
@@ -302,7 +302,7 @@ body {
 
 @media (max-width: 480px) {
   .upbutton {
-    font-size: 10vw;
+    font-size: 12vw;
     margin-right: 20px;
     margin-top: 3vw;
   }
@@ -367,7 +367,7 @@ a {
 
 @media (max-width: 480px) {
   .dropbtn {
-    font-size: 6vw;
+    font-size: 7vw;
   }
 }
 
@@ -443,13 +443,19 @@ a {
 @media (max-width: 480px){
     .introtext h1 {
         margin-bottom: 2.5vh;
-        font-size: 6vw;
+        font-size: 12vw;
     }    
 }
 
 @media (min-width: 481px){
     .introtext h1 {
-        font-size: 5vw;
+        font-size: 8vw;
+    }    
+}
+
+@media (min-width: 960px){
+    .introtext h1 {
+        font-size: 5.7em;
     }    
 }
 
@@ -459,20 +465,21 @@ a {
 
 @media (max-width: 480px){
     .introdes {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }    
 }
 
 @media (min-width: 481px){
     .introdes {
         padding-top: 1vw;
-        font-size: 2.25vw;
+        font-size: 3vw;
     }    
 }
 
 @media (min-width: 960px){
     .introdes {
         padding-top: .5em;
+        font-size: 1.9em;
     }    
 }
 
@@ -587,25 +594,14 @@ html {
   .text.show {
     opacity: 1;
 
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-
-    transition: transform 400ms ease, opacity 400ms ease;
-    -webkit-transition: -webkit-transform 400ms ease, -webkit-opacity 500ms ease;
-    -moz-transition: -moz-transform 400ms ease, opacity 500ms ease;
-    -ms-transition: -ms-transform 400ms ease, opacity 500ms ease;
-    -o-transition: -o-transform 400ms ease, opacity 500ms ease;
+    transition: opacity 400ms ease;
+    -webkit-transition: -webkit-opacity 500ms ease;
+    -moz-transition: opacity 500ms ease;
+    -ms-transition: opacity 500ms ease;
+    -o-transition: opacity 500ms ease;
   }
 
   .project img.show {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 
     filter: blur(2px);
     -webkit-filter: blur(2px);
