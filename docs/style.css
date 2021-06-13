@@ -218,22 +218,15 @@ body {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
 .btnbox {
   position: fixed;
   right: 0px;
   bottom: 0px;
   z-index: 2;
   display: block;
-
+    opacity: 0;
+    animation: fadeandmoveup 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 1200ms;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width: 480px) {
@@ -317,6 +310,9 @@ body {
   display: block;
   padding-bottom: 48px;
   padding-right: 40px;
+    opacity: 0;
+    animation: fadeandmoveup 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 1200ms;
+    animation-fill-mode: forwards;
 }
 
 .upbutton {
@@ -350,8 +346,8 @@ body {
 @media (min-width: 960px){
     .upbutton {
         font-size: 50pt;
-        margin-top: 25px;
-        margin-right: 20px;
+        margin-top: 2vh;
+        margin-right: 2vw;
     }    
 }
 
@@ -390,6 +386,21 @@ a {
     object-fit: cover;
 }
 
+@keyframes fadeandmoveup {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0,15px);
+        -ms-transform: translate(0,15px);
+        transform: translate(0,15px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0px);
+        -ms-transform: translate(0px);
+        transform: translate(0px);
+    }
+}
+
 .introtext {
     position: absolute;
     padding: 2%;
@@ -417,6 +428,7 @@ a {
     margin: 0;
     letter-spacing: -.15vw;
     line-height: 0.87;
+    animation: fadeandmoveup 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 @media (max-width: 480px){
@@ -439,7 +451,9 @@ a {
 }
 
 .introdes {
-    line-height: 1.2;    
+    line-height: 1.2;
+    opacity: 1;
+    animation: fadeandmoveup 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 @media (max-width: 480px){
@@ -562,6 +576,12 @@ html {
   }
 }
 
+@media (max-width:960px) {
+  .text {
+    opacity: 1;
+  }
+}
+
 @media (min-width:960px) {
   .text {
     font-size: 66pt;
@@ -569,7 +589,10 @@ html {
   }
 }
 
+@media (min-width: 960px) {
   .text.show {
+    font-size: 66pt;
+    letter-spacing: 0.25vw;
     opacity: 1;
 
     transition: opacity 400ms ease;
@@ -578,7 +601,9 @@ html {
     -ms-transition: opacity 500ms ease;
     -o-transition: opacity 500ms ease;
   }
+}
 
+@media (min-width: 960px) {
   .project img.show {
 
     filter: blur(2px);
@@ -593,11 +618,9 @@ html {
     -ms-transition: all 400ms ease;
     -o-transition: all 400ms ease;
   }
+}
 
-/* intersection observer acts funky when viewport positioned in places*/
-
-
-@keyframes fade-in-menu { 
+@keyframes fadeinmenu { 
     0% {
     opacity: 0;
     }
@@ -614,9 +637,9 @@ html {
 
 @media (min-width:480px) {
     .pcontain.show a{
-        -webkit-animation: fade-in-menu 1250ms ease-out forwards;
-        -moz-animation: fade-in-menu 1250ms ease-out forwards;
-        animation: fade-in-menu 1250ms ease-out forwards;
+        -webkit-animation: fadeinmenu 1250ms ease-out forwards;
+        -moz-animation: fadeinmenu 1250ms ease-out forwards;
+        animation: fadeinmenu 1250ms ease-out forwards;
         animation-fill-mode: forwards;
     }
 }
