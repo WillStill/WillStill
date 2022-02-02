@@ -1,0 +1,270 @@
+#nav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgba(50, 98, 115, 1);
+    padding: 0px 1%;
+}
+         
+.logo {
+    justify-self: center;
+    font-size: 4em;
+    font-weight: 600;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+div#icons {
+    font-size: 2.5em;
+    font-family: nav;
+    margin: 0 .1em 0 0;
+    display: flex;
+    min-width: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+} 
+div#icons a {
+    color: #EEEEEE;
+}
+section#nav a:hover {
+    color: #FFFFFF;
+}
+div#icons a:nth-child(1) {
+    font-size: 1.3em;
+    margin-left: .0em;
+    margin-bottom: .23em;
+}
+div#icons a:nth-child(2) {
+    font-size: 1.3em;
+    margin-left: .016em;
+    margin-bottom: .333em;
+}
+div#icons a:nth-child(3) {
+    font-size: 1.3em;
+    margin-left: .02em;
+    margin-bottom: .234em;
+}
+div#icons a:nth-child(4) {
+    font-size: 1.3em;
+    margin-left: .07em;
+    margin-bottom: .254em;
+}
+div#icons a:nth-child(5) {
+    font-size: 1.3em;
+    margin-left: .068em;
+    margin-bottom: .362em;
+}
+div#icons a:nth-child(6) {
+    font-size: 1.4em;
+    margin-left: .05em;
+    margin-bottom: .169em;
+}
+.card {
+    display: flex;
+    word-wrap: break-word;
+    background-color: #EEEEEE;
+    margin: 10vh 0 25vh;
+    padding: 3em; 
+}
+.cardimg {
+    object-fit:cover;
+    border: 1.5em solid #E39774;
+}
+.cardtxt {
+    padding: 0 1.5em;
+    width: 60%;
+}
+.homebg {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+    background: url(images/jpg/city.jpg) center center / cover;
+}
+.main {
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+.gallery {
+    width: 100%;
+    padding: 2rem 0rem 0px 0rem;
+    display: block;
+}
+.gallerysplit {
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 2rem .5rem 0px .5rem;
+    display: block;
+}
+b {
+    font-weight: 800;
+}
+
+body {
+    background-color: #EEEEEE;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+    min-width: 320px;
+    max-width:960px;
+    color: #326273;
+    font-family: transat,sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+
+/* WS 2.28 ~~ Implement MIN-WIDTH and MAX-WIDTH into body. */
+
+p {
+    margin: 0px;
+    font-size: 1.25rem;
+}
+a {
+    text-decoration: none;
+}
+ h1, h2, h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+h4, h5, h6 {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+h1 {
+    background-color: #5C9EAD;
+    color: #EEEEEE;
+    font-size: 3em;
+    padding-left: 1rem;
+}
+h2 {
+    background-color: #5C9EAD;
+    color: #EEEEEE;
+    font-size: 2em;
+    padding-left: 1rem;
+}
+.borderleft {
+    border-left: 1em solid #E39774;
+    padding-left: 0.5em;
+    margin-top: 1em;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  flex: 50%;
+}
+.center {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+.flex {
+    display:flex;
+}
+figure {
+    margin: 0px;
+}
+figure figcaption {
+    text-align: center;
+    font-weight: 600;
+    display: block;
+    padding: 1em 0px 2em;
+}
+ul li {
+    font-size: 1.25rem;
+}
+iframe {
+    border: none;
+    width: 100%;
+    height: 960px;
+    padding-top: 1rem;
+}
+img {
+    display: flex;
+}
+.handwriting {
+  font-family: nav;
+  font-size: 48px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 50px;
+   width: 100%;
+   text-align: center;
+   background-color: red;
+}
+
+
+
+
+body {
+    background-color: #FDFDFA;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+    min-width: 360px;
+    max-width:960px;
+    color: #326273;
+    font-family: transat,sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: overlay;
+    text-decoration: none;
+}
+
+.buttonbox {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    display: block;
+    padding-bottom: 48px;
+    padding-right: 40px;
+}
+
+@media (max-width: 360px) {
+    .buttonbox {
+        position: fixed;
+        left: 50%;
+        margin-left: -145px;
+        padding-bottom: 24px;
+        padding-right: 36px;
+    }
+}
+
+.abouta {
+    position: relative;
+    align-items: flex-end;
+    display: flex;
+    height: 36px;
+    width: 260px;
+    margin: 15px;
+    padding: 0;
+    flex-direction: column;
+    font-family: transat,sans-serif;
+    color: #1D1A11;
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.abouta._2 {
+    margin-top: ;
+}
+
+.abouta._3 {
+    margin-top: ;
+}
+
+@media (max-width: 360px){
+    .abouta {
+        font-size: 26px;
+    }
+}
