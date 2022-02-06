@@ -101,7 +101,7 @@ body {
 .navbutton {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 0;
   flex-direction: column;
   font-family: bfont;
