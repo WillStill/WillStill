@@ -1,6 +1,7 @@
 1 Make Art in Illustrator
 2 Save illustrator art as SVG, Make sure that they are shapes, not lines
-2.5 MAKE SURE THEY ARE SHAPES! go into objects/shapes/convert to shapes AND objects/stroke/outline stroke
+2.1 MAKE SURE THEY ARE SHAPES! go into objects/shapes/convert to shapes AND objects/stroke/outline stroke
+2.2 THEY MUST BE COMPOUND SHAPES IN ILLUSTRATOR. I HAVE SPENT 3 HOURS TRYING TO FIND OUT THIS ISSUE.
 3 Go to Icomoon.io/app
 4 Add SVG to Icomoon
 5 Go to bottom of page and click generate font
