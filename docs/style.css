@@ -331,7 +331,7 @@ a {
 
 #projects {
   position: relative;
-  height: 200vh;
+  height: 250vh;
   background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa, #fdfdfa);
 }
 
@@ -340,7 +340,7 @@ html {
 }
 
 .pcontain {
-  height: 200vh;
+  height: 250vh;
   max-width: 960px;
   padding-top: 10vh;
   margin-left: auto;
@@ -538,3 +538,26 @@ html {
     	animation-delay: 850ms;
     }
 }
+
+/* BOTTOM SECTION ========================================================================================================================== */
+
+.bus {
+  display: block;
+  width: 30%;
+  justify-content: center;
+  margin-right: 2%;
+  margin-left: auto;
+}
+
+@media (max-width: 480px){
+    .bus {
+        width: 50%;
+    }    
+}
+@media (min-width: 481px){
+    .bus {
+        width: 50%;
+        margin-right: 1%;
+    }    
+}
+
