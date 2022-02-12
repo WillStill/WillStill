@@ -541,12 +541,16 @@ html {
 
 /* BOTTOM SECTION ========================================================================================================================== */
 
+.busbottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 .bus {
-  display: block;
-  width: 30%;
-  justify-content: center;
-  margin-right: 2%;
-  margin-left: auto;
+    position: relative; 
+    display: block;
+    float: right;
 }
 
 @media (max-width: 480px){
@@ -560,4 +564,50 @@ html {
         margin-right: 1%;
     }    
 }
+@media (min-width: 960px) {
+    .bus {
+        width: 35%;
+        margin-right: 1%;
+  }
+}
 
+.signbottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.bussign {
+  position: relative; 
+  display: block;
+  float: right;
+  width: 10%;
+  
+  font-family: bfont;
+  z-index: 5;
+}
+
+@media (max-width: 480px){
+    .bussign {
+        width: 6.6%;
+        right: 40.9vw;
+        bottom: 20.35vw;
+    }    
+}
+@media (min-width: 481px){
+    .bussign {
+        width: 6.6%;
+        margin-right: 1%;
+        right: 40.9vw;
+        bottom: 20.35vw;
+    }    
+}
+@media (min-width: 960px) {
+    .bussign {
+        width: 5%;
+        margin-right: 1%;
+        right: 28.5vw;
+        bottom: 14.25vw;
+  }
+}
