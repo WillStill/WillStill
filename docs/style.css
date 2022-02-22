@@ -322,7 +322,9 @@ a {
 
 #vision {
   height: 100vh;
+  /* 
   background: linear-gradient(200deg, #fdfdfa, #ecf5e9, #d3eee0, #b5e7e1, #99deea);
+  */ 
 }
 
 
@@ -330,25 +332,45 @@ a {
 /* PROJECT SECTION ========================================================================================================================== */
 
  
-#projects {
+#prosect {
   position: relative;
   height: 250vh;
+  /* 
   background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa, #fdfdfa);
+  */
+}
+
+.projects {
+    font-size: 0;
+    position: relative;
+    margin: 1% auto 0 auto;
+    min-width: 320px;
+    max-width: 960px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-#project {
-    
+.div.project {
+    width: 25%;
+    display: inherit;
 }
 
-#project img{
-    
+.project {
+    line-height: 0;
+    float: left;
+    overflow: hidden;
+    position: relative;
 }
 
-#focus {
+.project img{
+    cursor: pointer;
+    float: left;
+    object-fit: cover;
+}
+
+.focus {
     
 }
 
