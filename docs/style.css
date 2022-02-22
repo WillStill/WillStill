@@ -332,20 +332,15 @@ a {
 /* PROJECT SECTION ========================================================================================================================== */
 
  
-#prosect {
+ /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
+ 
+#projects {
   position: relative;
   height: 250vh;
-  /* 
-  background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa, #fdfdfa);
+width: 100%!important;
+/* 
+  background: linear-gradient(185deg, #5dc0d1, #8ed1ca, #bcdfce, #e2edde, #fdfdfa, #fdfdfa); 
   */
-}
-
-.projects {
-    font-size: 0;
-    position: relative;
-    margin: 1% auto 0 auto;
-    min-width: 320px;
-    max-width: 960px;
 }
 
 html {
@@ -362,6 +357,15 @@ html {
     float: left;
     overflow: hidden;
     position: relative;
+      position: relative;
+  float: left;
+  left: 0px;
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  line-height: 1;
+  display: inline-block; 
+  width: 25%
 }
 
 .project img{
@@ -370,17 +374,13 @@ html {
     object-fit: cover;
 }
 
-.focus {
-    
-}
-
-/* 
 .pcontain {
-  height: 250vh;
-  max-width: 960px;
-  padding-top: 10vh;
-  margin-left: auto;
-  margin-right: auto;
+font-size: 0;
+    width: 100%!important;
+    margin: 1% auto 0 auto;
+    min-width: 320px;
+    max-width: 960px;
+    
 }
 
 @media (max-width: 480px) {
@@ -389,21 +389,10 @@ html {
   }
 }
 
-.project {
-  position: relative;
-  float: left;
-  left: 0px;
-  top: auto;
-  right: 0px;
-  bottom: 0px;
-  line-height: 1;
-  display: inline-block; 
-}
-
+/*  
 @media (min-width: 481px) {
   .project {
     width: 25.33%;
-    margin: 0 4% 10% 4%;
   }
 }
 @media (max-width: 480px) {
@@ -412,22 +401,24 @@ html {
     margin: 10% 0 14% 0;
   }
 }
+*/
 
-.project:hover {
-  cursor: pointer;
-}
 
 .project img {
-  float: left;
-  height: auto;
-  width: 100%;
+cursor: pointer;
+    width: 100%;
+    float: left;
+    height: auto;
+  /* 
   transition: all 400ms ease;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
   -o-transition: all 400ms ease;
+   *  */
 }
 
+/*
 .text {
   position: absolute;
   display: flex;
@@ -444,7 +435,7 @@ html {
   -ms-transition: -ms-transform 400ms ease, opacity 500ms ease;
   -o-transition: -o-transform 400ms ease, opacity 500ms ease;
 }
-
+/*
 @media (max-width:479px) {
   .text {
     font-size: 27vw;
@@ -464,14 +455,14 @@ html {
     opacity: 1;
   }
 }
-
+/*
 @media (min-width:960px) {
   .text {
     font-size: 66pt;
     letter-spacing: 0.25vw;
   }
 }
-
+/*
 @media (min-width: 960px) {
   .text.show {
     font-size: 66pt;
@@ -485,7 +476,7 @@ html {
     -o-transition: opacity 500ms ease;
   }
 }
-
+/*
 @media (min-width: 960px) {
   .project img.show {
 
@@ -511,13 +502,13 @@ html {
 	opacity: 1;
 	}
 }
-
+/*
 @media (min-width:480px) {
     .pcontain a {
         opacity: 0;
     }
 }
-
+ 
 @media (min-width:480px) {
     .pcontain.show a{
         -webkit-animation: fadeinmenu 1250ms ease-out forwards;
@@ -575,7 +566,6 @@ html {
     }
 }
  */
-
 /* BOTTOM SECTION ========================================================================================================================== */
 
 .busbottom {
