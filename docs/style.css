@@ -61,87 +61,7 @@ html {
 
 /* TOP LEFT BUTTON SECTION ===================================================================================================================== */
 
-
-.btnbox {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  z-index: 2;
-  display: block;
-    opacity: 0;
-    animation: moveup 800ms ease 200ms, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 200ms;
-    animation-fill-mode: forwards;
-}
-
-@media (max-width: 480px) {
-  .btnbox {
-  padding-bottom: 3.15vh;
-  padding-left: 4vw;
-  }
-}
-@media (min-width: 481px) {
-  .btnbox {
-  padding-bottom: 3.15vh;
-  padding-left: 40px;
-  }
-}
-@media (min-width: 960px) {
-  .btnbox {
-    padding-bottom: 30px;
-    padding-left: 40px;
-  }
-}
-
-
-
-
-/* BOTTOM LEFT BUTTON SECTION ==================================================================================================================== */
-
-
-.navbutton {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  padding: 0;
-  flex-direction: column;
-  font-family: bfont;
-}
-
-@media (max-width: 480px) {
-  .navbutton {
-    font-size: 0.7em;
-  }
-}
-@media (min-width: 481px){
-    .navbutton {
-        font-size: 0.9em;
-    }    
-}
-@media (max-width: 959px) {
-  .navbutton {
-    margin: 0.3vh 0;
-  }
-}
-@media (min-width: 960px) {
-  .navbutton{
-
-    height: 36px;
-    width: 260px;
-    margin: 15px;
-    font-size: 27pt;
-  }
-}
-@media (min-width: 960px) {
-    .navbutton._2 {
-        margin-top: 15px;
-    }
-}
-@media (min-width: 960px) {
-    .navbutton._3 {
-        margin-top: 20px;
-    }
-}
-
+/* 
 .sidebar {
   position: fixed;
   left: 0px;
@@ -191,9 +111,102 @@ html {
 }
 
 
+ */
+
+
+
+/* BOTTOM LEFT BUTTON SECTION ==================================================================================================================== */
+
+
+.nav {
+  width: 95%;
+  margin: 2% auto 0 auto!important;
+    min-width: 320px;
+    max-width: 960px;
+  z-index: 2;
+  position: relative;
+  font-family: bfont;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+    opacity: 0;
+    animation: moveup 800ms ease 200ms, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 200ms;
+    animation-fill-mode: forwards;
+}
+
+/*
+@media (max-width: 480px) {
+  .btnbox {
+  padding-bottom: 3.15vh;
+  padding-left: 4vw;
+  }
+}
+@media (min-width: 481px) {
+  .btnbox {
+  padding-bottom: 3.15vh;
+  padding-left: 40px;
+  }
+}
+@media (min-width: 960px) {
+  .btnbox {
+    padding-bottom: 30px;
+    padding-left: 40px;
+  }
+}
+*/
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  flex-direction: column;
+  font-family: bfont;
+  font-size: 1.1em;
+}
+
+/* 
+@media (max-width: 480px) {
+  .navbutton {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 481px){
+    .navbutton {
+        font-size: 0.9em;
+    }    
+}
+@media (max-width: 959px) {
+  .navbutton {
+    margin: 0.3vh 0;
+  }
+}
+@media (min-width: 960px) {
+  .navbutton{
+
+    height: 36px;
+    width: 260px;
+    margin: 15px;
+    font-size: 27pt;
+  }
+}
+@media (min-width: 960px) {
+    .navbutton._2 {
+        margin-top: 15px;
+    }
+}
+@media (min-width: 960px) {
+    .navbutton._3 {
+        margin-top: 20px;
+    }
+}
+*/
+
+
 .navbutton:hover,
 .upbutton:hover {
   color: #e60000;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -204,23 +217,20 @@ a {
 
 
 
-
-/* INTRO SECTION =====================================================================================================================*/
-
-#intro {
-  position: relative;
-  height: 100vh;
-  top: 0;
-  display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-
 /* IMAGES SUBSECTION =================================================================== */
 
+.self {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    object-position: 25% 0;
+    object-fit: cover;
+}
+
 .cat {
+    position: absolute;
+    top: 0;
     height: 100vh;
     width: 100%;
     object-position: 100% 0;
@@ -230,23 +240,21 @@ a {
     animation-fill-mode: forwards;
 }
 
-.self {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    object-position: 25% 0;
-    object-fit: cover;
-}
+
 
 
 
 /* TEXT SUBSECTION =================================================================== */
 
-.introtext {
-    position: absolute;
-    padding: 2%;
+.intro {
+
 }
 
+.introtext {
+    padding: 2%;
+    margin: 25vh 11vw 15vh 33vw;
+}
+/* 
 @media (max-width: 480px){
     .introtext {
         padding: 15vh 11vw 15vh 18vw;
@@ -262,16 +270,19 @@ a {
         padding: 15vh 11vw 15vh 35vw;
     }    
 }
-
+ */
 .introtext h1 {
     margin: 0;
     letter-spacing: -.15vw;
     line-height: 0.87;
+    
     opacity: 0;
     animation: moveup 1000ms ease 0s , fadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
     animation-fill-mode: forwards;
+    
+    font-size: 4.3em;
 }
-
+/* 
 @media (max-width: 480px){
     .introtext h1 {
         margin-bottom: 2.5vh;
@@ -288,14 +299,18 @@ a {
         font-size: 4.3em;
     }    
 }
-
+*/
 .introtext p {
     line-height: 1.2;
+    
     opacity: 0;
     animation: moveup 800ms ease 200ms, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 200ms;
     animation-fill-mode: forwards;
+        padding-top: .5em;
+        
+        font-size: 1.7em;
 }
-
+/* 
 @media (max-width: 480px){
     .introtext p {
         font-size: 4.5vw;
@@ -313,7 +328,7 @@ a {
         font-size: 1.7em;
     }    
 }
-
+*/
 
 
 
