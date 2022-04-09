@@ -8,7 +8,7 @@ body {
   line-height: 1.4;
   text-decoration: none;
   overflow-x: hidden;
-    margin: 1% auto 0 auto;
+    margin: 0 auto 0 auto;
     min-width: 320px;
     max-width: 960px;
 }
@@ -117,35 +117,38 @@ html {
 
 
 
-/* BOTTOM LEFT BUTTON SECTION ==================================================================================================================== */
+/* NAVIGATION ==================================================================================================================== */
 
 
 .nav {
-  width: 95%;
-  margin: 2% auto 0 auto;
-  z-index: 2;
-  position: relative;
-  font-family: bfont;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    width: 95%;
+    margin: 1% auto 2% auto;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     opacity: 0;
     animation: moveup 800ms ease 200ms, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715) 200ms;
     animation-fill-mode: forwards;
 }
 
-.icon {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  padding: 0;
-  flex-direction: column;
-  font-family: bfont;
-  font-size: 1.1em;
+#home {
+    font-weight: 800;
+    font-size: 2em;
 }
 
-.icon:hover {
-  color: #e60000;
+.icons {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    
+}
+
+.nav a:hover {
+    color: #e60000;
 }
 
 a {
@@ -154,9 +157,7 @@ a {
   color: #1d1a11;
 }
 
-
-
-/* IMAGES SUBSECTION =================================================================== */
+/* HOMEIMAGES SUBSECTION =================================================================== */
 
 .self {
     z-index: -1;
@@ -186,12 +187,12 @@ a {
 
 
 
-/* TEXT SUBSECTION =================================================================== */
+/* HOMETEXT SUBSECTION =================================================================== */
 
 
 
 .intro {
-    margin: 35vh auto 0 2%;
+    margin: 30vh auto 0 2%;
     overflow-x: hidden;
 }
 
@@ -252,10 +253,9 @@ a {
  
  /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
  
-.projects {
+.art {
   position: relative;
-  height: 250vh;
-width: 100%!important;
+  width: 100%!important;
 }
 
 @media (min-width: 456px){
@@ -297,7 +297,6 @@ width: 100%!important;
 font-size: 0;
     width: 100%!important;
     margin: 1% auto 0 auto;
-    
 }
 
 
@@ -305,73 +304,24 @@ font-size: 0;
 
 /* BOTTOM SECTION ========================================================================================================================== */
 
-.busbottom {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
 .bus {
-    position: relative; 
-    display: block;
-    float: right;
+    margin-top: 100vh;
 }
 
 @media (max-width: 480px){
     .bus {
         width: 50%;
+        margin-left: 5%;
     }    
 }
 @media (min-width: 481px){
     .bus {
-        width: 50%;
-        margin-right: 1%;
+        width: 35%;
+        margin-left: 5%;
     }    
 }
 @media (min-width: 960px) {
     .bus {
         width: 35%;
-        margin-right: 1%;
-  }
-}
-
-.signbottom{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    
-}
-
-.bussign {
-  position: relative; 
-  display: block;
-  float: right;
-  width: 10%;
-  
-  font-family: bfont;
-  z-index: 5;
-}
-
-@media (max-width: 480px){
-    .bussign {
-        width: 6.6%;
-        right: 40.9vw;
-        bottom: 20.35vw;
-    }    
-}
-@media (min-width: 481px){
-    .bussign {
-        width: 6.6%;
-        margin-right: 1%;
-        right: 40.9vw;
-        bottom: 20.35vw;
-    }    
-}
-@media (min-width: 960px) {
-    .bussign {
-        width: 5%;
-        margin-right: 1%;
-        right: 28.5vw;
-        bottom: 14.25vw;
   }
 }
