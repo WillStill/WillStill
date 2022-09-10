@@ -4,45 +4,45 @@
  *  max-width: 455px
  *  min-width: 456px */
 body {
-  background-color: #FDFDFA;
-  display: block;
-  color: #1D1A11;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-decoration: none;
-  /* WS:9/3/22: Overflow should exist so that page is accessible.*/
-  /*overflow-x: hidden;*/
+    background-color: #FDFDFA;
+    display: block;
+    color: #1D1A11;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    /* WS:9/3/22: Overflow should exist so that page is accessible.*/
+    /*overflow-x: hidden;*/
     margin: 0 auto 0 auto;
     min-width: 320px;
     max-width: 960px;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 /* WS:9/3/22: Universal rules for the site*/
 a {
-    
+
 }
 a:visited {
-    
+
 }
 a:hover {
-    
+
 }
 p {
-    
+
 }
 h1 {
-    
+
 }
 h2 {
-    
+
 }
 h3 {
-    
+
 }
 /* ANIMATIONS SECTION ===================================================================================================================== */
 /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
@@ -178,9 +178,9 @@ h3 {
 }
 
 a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #1d1a11;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1d1a11;
 }
 
 /* HOMEIMAGES SUBSECTION =================================================================== */
@@ -192,7 +192,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-        object-position: 25% 0;
+    object-position: 25% 0;
     object-fit: cover;
 }
 
@@ -222,7 +222,7 @@ a {
     overflow-x: hidden;
 }
 
-@media (min-width: 960px) {
+@media (min-width : 960px) {
     .intro {
 
     }
@@ -232,17 +232,17 @@ a {
     margin: 0;
     letter-spacing: -.15vw;
     line-height: 0.87;
-    
+
     opacity: 0;
-    animation: moveup 1000ms ease 0s , fadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+    animation: moveup 1000ms ease 0s, fadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
     animation-fill-mode: forwards;
-    
+
     font-size: 10.5vw;
 }
 
-@media (min-width: 960px) {
+@media (min-width : 960px) {
     .intro h1 {
-        font-size:4.3em;
+        font-size: 4.3em;
     }
 }
 
@@ -255,7 +255,7 @@ a {
     padding-top: .5em;
 }
 
-@media (min-width: 960px) {
+@media (min-width : 960px) {
     .intro p {
         font-size: 1.7em;
     }
@@ -276,43 +276,43 @@ a {
 
 /* PROJECT SECTION ========================================================================================================================== */
 
- 
- /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
- 
+
+/* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
+
 .art {
-  position: relative;
-  width: 100%!important;
+    position: relative;
+    width: 100% !important;
 }
 
-@media (min-width: 456px){
+@media (min-width : 456px) {
     div.project {
         width: 25%;
         display: inherit;
-        }
+    }
 }
 
 .project {
-  line-height: 0;
-  float: left;
-  overflow: hidden;
-  position: relative;
+    line-height: 0;
+    float: left;
+    overflow: hidden;
+    position: relative;
 }
-@media (max-width: 455px){
+@media (max-width : 455px) {
     .project {
         width: 100%;
         display: inline-block;
     }
 }
 
-@media (min-width: 456px){
+@media (min-width : 456px) {
     .project img {
         cursor: pointer;
         width: 100%;
         float: left;
         height: auto;
-        }
+    }
 }
-@media (max-width: 455px){
+@media (max-width : 455px) {
     .project img {
         width: 100%;
         height: auto;
@@ -320,8 +320,8 @@ a {
 }
 
 .pcontain {
-font-size: 0;
-    width: 100%!important;
+    font-size: 0;
+    width: 100% !important;
     margin: 1% auto 0 auto;
 }
 
@@ -334,20 +334,20 @@ font-size: 0;
     margin-top: 100vh;
 }
 
-@media (max-width: 480px){
+@media (max-width : 480px) {
     .bus {
         width: 50%;
         margin-left: 5%;
-    }    
+    }
 }
-@media (min-width: 481px){
+@media (min-width : 481px) {
     .bus {
         width: 35%;
         margin-left: 5%;
-    }    
+    }
 }
-@media (min-width: 960px) {
+@media (min-width : 960px) {
     .bus {
         width: 35%;
-  }
+    }
 }
