@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="stiller_schema1.rnc" type="application/relax-ng-compact-syntax"?>
+<xml>
+    <source>
+        <title level="book">Montage of a Dream Deferred</title>
+        <author>Langston Hughes</author>
+        <date when="1951"/>
+    </source>
+    <poem>
+        <title level="inner">Good Morning</title>
+        <lineGroup>
+            <line n="L1">Good morning, daddy!</line> <!-- ws: issue with n attribute value, "must be an XML name without colons". This site http://books.xmlschemata.org/relaxng/ch19-77151.html says that it can't use numerical identifiers so I changed all n values to hav L listed before-->
+            <line n="L2">I was born here, he said,</line>
+            <line n="L3">watched <placeName ref="NYC-Harlem">Harlem</placeName> grow</line>
+            <line n="L4">until colored folks spread</line>
+            <line n="L5">from river to river</line>
+            <line n="L6">across the middle of <placeName ref="NYC-Man">Manhattan</placeName></line>
+            <line n="L7">out of <place ref="NYC-PennSt">Penn Station</place></line>
+            <line n="L8">dark tenth of a nation,</line>
+            <line n="L9">planes from <place ref="PR">Puerto Rico</place>,</line>
+            <line n="L10">and holds of boats, chico,</line>
+            <line n="L11">up from <place ref="Cuba">Cuba</place>
+                <place ref="Ha">Haiti</place>
+                <place ref="Ja">Jamaica</place>,</line>
+            <line n="L12">In buses marked <place ref="NYC">New York</place></line>
+            <line n="L13">from <place ref="Ga">Georgia</place>
+                <place ref="Fla">Florida</place>
+                <place ref="La">Louisiana</place></line>
+            <line n="L14">to <place ref="NYC-Harlem">Harlem</place>
+                <place ref="NYC-Brook">Brooklyn</place>
+                <place ref="NYC-Bronx">the Bronx</place></line>
+            <line n="L15">but most of all to <place ref="NYC-Harlem">Harlem</place></line>
+            <line n="L16">dusky sash across <place ref="NYC-Man">Manhattan</place></line>
+            <line n="L17">I've seen them come dark</line>
+            <line n="L18">wondering</line>
+            <line n="L19">wide-eyed</line>
+            <line n="L20">dreaming</line>
+            <line n="L21">out of <place ref="NYC-PennSt">Penn Station</place>—</line>
+            <line n="L22">but the trains are late.</line>
+            <line n="L23">The gates open—</line>
+            <line n="L24">Yet there're bars</line>
+            <line n="L25">at each gate.</line>
+        </lineGroup>
+        <lineGroup>
+            <line n="L26">What happens</line>
+            <line n="L27">to <motif>a dream deferred</motif>?</line>
+        </lineGroup>
+        <lineGroup>
+            <line n="L28">Daddy, ain't you heard?</line>
+        </lineGroup>
+    </poem>
+</xml>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="stiller_relaxNG2.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <poem>
+        <title><u>BALLAD OF BOOKER T.</u></title>
+        by 
+        <author>Langston Hughes</author>
+        
+        <stanza>
+            <verse><sentence num="1" mark="start"/>Booker T.</verse>
+            <verse>Was a practical man.</verse>
+            <verse><sentence num="2" mark="start"/>He said, Till the soil</verse>
+            <verse>And learn from the land.</verse>
+            <verse ref="n1" xml:id="l-5"><sentence num="3" mark="start"/>Let down your
+                bucket</verse>
+            <!-- 2022-09-01 ebb: Here we're changing your attribute values to use a hashtag and to be formatted as letter with number to POINT to your 
+            new unique @xml:ids. -->
+            <!-- With first experience again with attributes, figured I could have the references refer to info away from the verses like citations of a textbook. -->
+            <verse ref="n1" xml:id="l-6">Where you are.</verse>
+            <verse xml:id="l-7"><sentence num="4" mark="start"/>Your fate is here</verse>
+            <verse xml:id="l-8">And not afar.</verse>
+            <verse xml:id="l-9"><sentence num="5" mark="start"/>To help yourself</verse>
+            <verse xml:id="l-10">And your fellow man,</verse>
+            <verse>Train your head,</verse>
+            <verse>Your heart, <u>and</u> <u>your</u> <u>hand</u>.</verse>
+            <verse><sentence num="6" mark="start"/>For smartness alone's</verse>
+            <verse>Surely not meet—</verse>
+            <verse>If you haven't at the same time</verse>
+            <verse>Got something to eat.</verse>
+            <verse><sentence num="7" mark="start"/>Thus at Tuskegee</verse>
+            <verse>He built a school</verse>
+            <verse>With book-learning there</verse>
+            <verse>And the workman's tool.</verse>
+            <verse><sentence num="8" mark="start"/>He started out</verse>
+            <verse>In a simple way—</verse>
+            <verse ref="n2">For yesterday</verse>
+            <verse ref="n2">Was <u>not</u> today.</verse>
+            <verse><sentence num="9" mark="start"/>Sometimes he had</verse>
+            <verse>Compromise in his talk—</verse>
+            <verse>For a man must crawl</verse>
+            <verse>Before he can walk—</verse>
+            <verse ref="n2">And in Alabama in '85</verse>
+            <verse ref="n2">A joker was lucky</verse>
+            <verse ref="n2">To be alive.</verse>
+            <verse>But Booker T.</verse>
+            <verse><sentence num="10" mark="start"/>Was nobody's fool:</verse>
+            <verse>You may carve a dream</verse>
+            <verse>With an humble tool.</verse>
+            <verse><sentence num="11" mark="start"/>The tallest tower</verse>
+            <verse>Can tumble down</verse>
+            <verse>If it be not rooted</verse>
+            <verse>In solid ground.</verse>
+            <verse><sentence num="12" mark="start"/>So, being a far-seeing</verse>
+            <verse>Practical man,</verse>
+            <verse>He said, Train your head,</verse>
+            <verse>Your heart, <u>and</u> <u>your</u> hand<u></u>.</verse>
+            <verse><sentence num="13" mark="start"/>Your fate is here</verse>
+            <verse>And not afar,</verse>
+            <verse ref="n1">So let down your bucket</verse>
+            <verse ref="n1">Where you are.</verse>
+        </stanza>
+    </poem>
+    <publishing>
+        <author><signature>LANGSTON HUGHES</signature></author>
+        <edition>Final Draft</edition>,
+        <location>Hollow Hills Farm, Monterey, California</location>,
+        <date>June 1, 1941</date>.
+        <citation>Citation: Drafts of Langston Hughes's poem "Ballad of Booker T.," 30 May–1 June
+            1941. (Langston Hughes Collection) Manuscript Division, Library of Congress, Washington,
+            D.C.</citation>
+    </publishing>
+    
+    <additional>
+        <marks>
+            <stamp xml:id="l-5 l-6 l-7 l-8 l-9 l-10">The Library of Congress Stamp</stamp>
+            <!-- WS: I found a way to reference the xml without creating multiple stamp elements! Links to where I got this: https://stackoverflow.com/questions/11467114/what-is-the-difference-between-idref-and-idrefs-in-xsd and https://www.w3.org/TR/xmlschema-2/#IDREFS -->
+            <!--<stamp xml:id="l-5">The Library of Congress Stamp</stamp>
+            <stamp xml:id="l-6">The Library of Congress Stamp</stamp>
+            <stamp xml:id="l-7">The Library of Congress Stamp</stamp>
+            <stamp xml:id="l-8">The Library of Congress Stamp</stamp>
+            <stamp xml:id="l-9">The Library of Congress Stamp</stamp>
+            <stamp xml:id="l-10">The Library of Congress Stamp</stamp>-->
+        </marks>
+        <commentary resp="willstill">
+            <note xml:id="n1"> These lines come from Booker T. Washington's 1895 speech from the Cotton States and International Exposition in Atlanta, Georgia.</note>
+            <note xml:id="n2"> These lines demonstrate a change in the Southern states over time, particually from the mid-19th century to early 20th century. These changes can be attributed in part to the service of Booker T. Washington throughout his life.</note>
+        </commentary>
+    </additional>
+</root>
+
+
+    <!-- 
+        
+        ws: NOTES:
+            <element xml:id="one two three"></element> works well, but I want to draw focus to the 'xml:id' part. Does 'xml:' ensure that it is referencing the xml document and not the next file over? Or is it just a name that can change, and we stick with it to aid us if we manipulate the text (or reference it outside the doc)?
+            I tried using xml:idrefs="l-5 l-6 l-7 l-8 l-9 l-10" at first. Would xml:idrefs be better to use in the situation with the stamp? I wasnt given an error so I thought that the attribute's name (xml:id="") was better used for consistency.
+            
+            
+===============================        
+        ebb: SUGGESTIONS: Try standoff markup, maybe like this:
+            Here we are setting up unique identifiers for each note using the standard @xml:id attribute. The value of an @xml:id must only be 
+            used once in the entire document, just like an HTML @id attribute. However, any attributes (like @ref) that *point to* the @xml:id would take a
+            hashmark `#` at the start of the value to **point to** the unique id. You may have as many hashtagged references to the unique id as you wish. 
+            
+            NOTE: There's a standing rule, or really a datatype form, that unique IDs in XML and HTML MUST be a combination of letters and numbers. They may NOT be only numbers. 
+            They CAN be only letters.  
+            
+            <commentary resp="willstill">
+                 
+                 <note xml:id="n1"> These lines come from Booker T. Washington's 1895 speech from the Cotton States and International Exposition in Atlanta, Georgia.</note>
+                 <note xml:id="n2">.....</note>
+            
+            
+            </commentary>
+            
+            
+            ebb: ALSO, try handling the red Library of Congress stamp in a standoff way, but still SEPARATE from your own editorial commentary.
+            Figure out an XML markup strategy for this. 
+=================================================== 
+           WS: 
+            This is a very inefficient way of tracking down references to other literary works within a text. Any ideas about how to better do this are appriciated!
+    REFERENCES:
+        ref="1". These lines come from Booker T. Washington's 1895 speech from the Cotton States and International Exposition in Atlanta, Georgia.
+        ref="2". These lines demonstrate a change in the Southern states over time, particually from the mid-19th century to early 20th century. These changes can be attributed in part to the service of Booker T. Washington throughout his life. -->
+    
+    
