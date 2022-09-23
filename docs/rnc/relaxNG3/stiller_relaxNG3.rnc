@@ -1,0 +1,29 @@
+#OUTLINE
+#root {
+#    about {
+#        title {}
+#        band {}
+#        songwriters {}
+#    }
+#    song {
+#        stanza+ { rhyme scheme
+#            verse+ { rhyme verse, lines }
+#        }
+#    }
+#}
+
+start = root
+root = element root {about, song}
+about = element about {title, mixed { band, writer+ } }
+title = element title {text}
+band = element band {text}
+writer = element writer {text}
+
+song = element song {stanza+}
+stanza = element stanza {num, rhymeScheme, verse+}
+verse = element verse {num, rhymeLine, mixed { chorus* } }
+chorus = element chorus {text}
+
+num = attribute num {xsd:int}
+rhymeScheme = attribute rhymeScheme {xsd:ID}
+rhymeLine = attribute rhymeLine {text}

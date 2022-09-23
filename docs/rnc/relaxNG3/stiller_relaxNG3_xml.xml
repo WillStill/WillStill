@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="stiller_relaxNG3.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <about>
+        <title>The Mind Electric</title>
+        <band>Miracle Musical</band> Songwriters: <writer>Ryan Richard Brady</writer> / <writer>Bora Karaca</writer> / <writer>Ross Steven Federman</writer> / <writer>Joseph Robert Hawley</writer>
+    </about>
+    <song>
+        <stanza num="1" rhymeScheme="AABC">
+            <verse num="1" rhymeLine="A">Think of these thoughts as limitless light</verse>
+            <verse num="2" rhymeLine="A">Exposing closing circuitry of fright</verse>
+            <verse num="3" rhymeLine="B">Think of each moment holding this breath</verse>
+            <verse num="4" rhymeLine="C">As death minute in decimal</verse>
+        </stanza>
+
+        <stanza num="2" rhymeScheme="DEFE">
+            <verse num="5" rhymeLine="D">Resident minor, how do you plead?</verse>
+            <verse num="6" rhymeLine="E">We'll need your testimony on the stand</verse>
+            <verse num="7" rhymeLine="F">Solemnly swear to tell the whole truth</verse>
+            <verse num="8" rhymeLine="E">So help you son, now raise your right hand</verse>
+        </stanza>
+
+        <stanza num="3" rhymeScheme="GHGH">
+            <verse num="9" rhymeLine="G">Father your honor, may I explain?</verse>
+            <verse num="10" rhymeLine="H">My brain has claimed its glory over me</verse>
+            <verse num="11" rhymeLine="G">I've a good heart albeit insane</verse>
+            <verse num="12" rhymeLine="H">Condemn him to the infirmary</verse>
+        </stanza>
+
+        <stanza num="4" rhymeScheme="II">
+            <verse num="13" rhymeLine="I">All mine towers crumble down the flowers gasping under rubble</verse>
+            <verse num="14" rhymeLine="I">Shrieking in the hall of lull, thy genius saves a thirst for trouble</verse>
+        </stanza>
+
+        <stanza num="5" rhymeScheme="HJKJ">
+            <verse num="15" rhymeLine="H">Scattering sparks of thought energy</verse>
+            <verse num="16" rhymeLine="J">Deliver me and carry me away</verse>
+            <verse num="17" rhymeLine="K">Here in my kingdom I am your Lord</verse>
+            <verse num="18" rhymeLine="J">I order you to cower and pray</verse>
+        </stanza>
+
+        <stanza num="6" rhymeScheme="LHHHHH">
+            <verse num="19" rhymeLine="L">Nuns commence incanting as the lightning strikes mine temples thus</verse>
+            <verse num="20" rhymeLine="H">Electrifying mine chambers, wholly scorching out thine sovereignty</verse>
+            <verse num="21" rhymeLine="H">So-so-so-so-so-so-so-so spiraling down thy majesty</verse>
+            <verse num="22" rhymeLine="H">I beg of thee, have mercy on me</verse>
+            <verse num="23" rhymeLine="H">I was just a boy you see</verse>
+            <verse num="24" rhymeLine="H">I plead of thee have sympathy for me</verse>
+        </stanza>
+
+        <stanza num="7" rhymeScheme="MNNO">
+            <verse num="25" rhymeLine="M">See how the serfs work the ground <chorus>(see how they work)</chorus></verse>
+            <verse num="26" rhymeLine="N">And they give it all they've got</verse>
+            <verse num="27" rhymeLine="N">And they give it all they've got</verse>
+            <verse num="28" rhymeLine="O">And you give it all you've got 'til you're down</verse>
+        </stanza>
+
+        <stanza num="8" rhymeScheme="MHJHPH">
+            <verse num="29" rhymeLine="M">See how the brain plays around</verse>
+            <verse num="30" rhymeLine="H">And you fall inside a hole you couldn't see</verse>
+            <verse num="31" rhymeLine="J">And you fall inside a hole inside a-</verse>
+            <verse num="32" rhymeLine="H">Someone help me</verse>
+            <verse num="33" rhymeLine="P">Understand what's going on inside my mind</verse>
+            <verse num="34" rhymeLine="H">Doctor I can't tell if I'm not me</verse>
+        </stanza>
+
+        <stanza num="9" rhymeScheme="QARA">
+            <verse num="35" rhymeLine="Q">When it grows bright, the particles start to</verse>
+            <verse num="36" rhymeLine="A">Marvel having made it through the night</verse>
+            <verse num="37" rhymeLine="R">Never they ponder, weather electric</verse>
+            <verse num="38" rhymeLine="A">Calming if you look at it right!</verse>
+        </stanza>
+    </song>
+</root>
