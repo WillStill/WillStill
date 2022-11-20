@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Will TEI-Starter-Sample-Behrend, October 13, 2022</title>
+        <author>William Stiller</author>
+<!-- 2022-10-12 ebb: This is an ODD that I started using the TEI Roma tool on 12 October 2022.  
+        You can continue working with it and customizing the selection of modules, elements, and attributes by uploading this file the tool site: 
+        https://romabeta.tei-c.org/
+        Or, you can continue editing this by hand in oXygen. 
+        -->
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI Consortium</publisher>
+        <availability status="free">
+          <p>TEI material can be licensed differently depending on the
+          use you intend to make of it. Hence it is made available
+          under both the CC+BY and BSD-2 licences. The CC+BY licence
+          is generally appropriate for usages which treat TEI content
+          as data or documentation. The BSD-2 licence is generally
+          appropriate for usage of TEI content in a software
+          environment. For further information or clarification,
+          please contact the TEI Consortium (info@tei-c.org).</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Written from scratch.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>TEI Complete</head>
+      <p>This TEI customization describes a schema that includes
+      <emph>all</emph> of the TEI P5 modules. This is a very useful
+      starting place for manually creating your own customizations —
+      it is much easier to delete the modules you do not want than to
+      add the modules you do. Furthermore this customization often
+      proves helpful for testing TEI software.</p>
+      <p>However, this particular TEI customization is <emph>not
+      recommended</emph> for actual use for encoding documents. It
+      produces schemas and reference documentation that will be much
+      larger and include many more elements than almost anyone could
+      conceivably ever need. Tempting though it may be simply to have
+      absolutely everything, and <q>just ignore</q> elements not
+      required, experience has shown that their presence makes the
+      documentation harder to read and use, and makes a schema that is
+      far more lax than desired.</p>
+      <p>The <att>n</att> attribute of each <gi>moduleRef</gi> below
+      reflects the chapter number of the TEI <title>Guidelines</title>
+      in which the module being referenced is defined. Note that the
+      modules are generally referred to in the order defined, with the
+      exception that the module for <title level="a">Simple Analytic
+      Mechanisms</title> is referred to before the module for <title level="a">Dictionaries</title>. This is because the class <name type="class">att.lexicographic.normalized</name> (which is
+      defined in <name type="module">analysis</name>) needs to be
+      specified before the class <name type="class">att.lexicographic</name> (which is defined in <name type="module">dictionaries</name>).</p>
+      <p>The first four modules are often
+      called the <soCalled>required</soCalled> modules. However, these
+      modules are not themselves technically required to create a TEI
+      conformant markup language (let alone a useful non-TEI
+      conformant markup language). Rather, they each contain one or
+      more <emph>elements</emph> which are required for TEI
+      conformance.</p>
+      <schemaSpec ident="Will-TEI-Starter-Sample-Behrend" start="TEI teiCorpus" prefix="tei_" targetLang="en" docLang="en">
+        <moduleRef n="01" key="tei"/>
+        <moduleRef n="02" key="header" except="abstract appInfo application authority availability biblFull cRefPattern calendar calendarDesc catDesc catRef category change citeData citeStructure classCode classDecl conversion correction correspAction correspContext correspDesc creation distributor edition editionStmt editorialDecl encodingDesc extent fileDesc funder geoDecl handNote hyphenation idno interpretation keywords langUsage language licence listChange listPrefixDef namespace normalization notesStmt prefixDef principal profileDesc projectDesc publicationStmt punctuation quotation refState refsDecl rendition revisionDesc samplingDecl schemaRef scriptNote segmentation seriesStmt sourceDesc sponsor stdVals styleDefDecl tagUsage tagsDecl taxonomy textClass titleStmt unitDecl unitDef xenoData"/>
+        <moduleRef n="03" key="core" except="analytic cb divGen email headItem headLabel index meeting monogr rb relatedItem rt ruby sp speaker stage abbr add addrLine address author bibl biblScope biblStruct binaryObject cit citedRange corr date del desc distinct editor ellipsis emph expan foreign gap gb gloss graphic head hi imprint item l label lb lg list listBibl measure measureGrp media mentioned milestone name note noteGrp num orig p pb postBox postCode ptr pubPlace publisher q quote ref reg resp respStmt rs said series sic soCalled street teiCorpus term textLang time title unclear unit"/>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <classSpec ident="att.dimensions" type="atts" mode="change"><classes mode="change"><memberOf key="att.ranging" mode="delete"/></classes><attList><attDef ident="precision" mode="delete"/><attDef ident="scope" mode="delete"/></attList></classSpec><classSpec ident="att.handFeatures" type="atts" mode="change"><attList><attDef ident="medium" mode="change"><valList mode="change"><valItem mode="add" ident="red_pen"><desc versionDate="2022-10-17" xml:lang="en">The text uses red pen</desc></valItem><valItem mode="add" ident="black_pen"><desc versionDate="2022-10-17" xml:lang="en">The text uses black pen</desc></valItem></valList></attDef></attList></classSpec><classSpec ident="att.anchoring" type="atts" mode="delete"/><classSpec ident="att.ascribed" type="atts" mode="delete"/><classSpec ident="att.ascribed.directed" type="atts" mode="delete"/><classSpec ident="att.cReferencing" type="atts" mode="delete"/><classSpec ident="att.canonical" type="atts" mode="delete"/><classSpec ident="att.datable.w3c" type="atts" mode="delete"/><classSpec ident="att.datcat" type="atts" mode="delete"/><classSpec ident="att.divLike" type="atts" mode="delete"/><classSpec ident="att.editLike" type="atts" mode="delete"/><classSpec ident="att.edition" type="atts" mode="delete"/><classSpec ident="att.formula" type="atts" mode="delete"/><classSpec ident="att.resourced" type="atts" mode="delete"/><classSpec ident="att.transcriptional" type="atts" mode="delete"/></schemaSpec>
+    </body>
+  </text>
+</TEI>

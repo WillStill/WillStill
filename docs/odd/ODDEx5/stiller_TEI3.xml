@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!-- Role attribute, persName, placeName, respStmt vs editor, ab (anonymous block), medium attribute, fileDesc, profileDesc -->
+<?xml-model href="out/Will-TEI-Starter-Sample-Behrend.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc><!-- ws-10-10-22: This seems more barebones than I was expecting. -->
+         <titleStmt>
+            <title type='comp'>A Calendar Page of Mary Behrend: a digital transcription</title> <!-- ws-10-11-22: Titles are difficult, it seems like the titleStmt, seriesStmt, and sourceDesc would all say the same thing for this document. Should I not be including all of them? Should I be giving a title to the page that I transcribed? What about the 7 complied on newtfire?-->
+            <author><persName>Behrend, Mary</persName></author>
+            <respStmt><!-- ws-10-10-22: Please let me know if respStmt is correct, or if it should be ommited. Section 2.2.1 is behind reasoning for the inclusion. -->
+               <resp>compiled by</resp>
+               <name>William Stiller</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p/>  
+         </publicationStmt>
+         <seriesStmt>
+            <p>A page from <title type='main'>1909 Calendar Pages</title></p><!-- ws-10-10-22: I chose 2 pages out of 7 compliled by ebb. Should I use respStmt to mention the 7 by ebb instead of all calendar pages? -->
+         </seriesStmt>
+         <sourceDesc>
+            <bibl>
+               <title type="comp">A Calendar Page of Mary Behrend: a digital transcription</title> <!-- Refer to line 9 for this title. -->. In <author>Mary Behrend</author>, <title type='main'>1909 Calendar Pages</title>.
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+   <!-- ws-10-11-22: Listed as a unitary text although part of a larger set-->
+      
+         <text>
+            <body>
+               <div type='page' n='77'><!-- ws:10-11-22: Assuming there are 365 pages, 77 corresponds with March 17th -->
+                  <!-- ws:10-11-22: Thought about putting the copyright in it's own div element, but went against it because it is still part of the page-->
+                  <p rend='align(center)'>COPYRIGHT 1909, BY<lb/>
+                     FRIENDSHIP CALENDAR CO.<lb/>
+                     NEW BRITAIN, CONN.<lb/>
+                  </p>
+                  <p rend='align(left)'>
+                     <date when='1909-03-17'><emph>M</emph>ARCH 17, 1909.
+                     WEDNESDAY
+                     <persName>St. Patrick</persName>'s Day</date>
+                  </p>
+                  <figure>
+                     <figDesc>Two green three-leaf clovers are stamped onto the page alsong with two snakes drawn in black pen.</figDesc>   
+                  </figure>
+                  <p>
+                     <lg type='stanza'> <!-- ws-10-11-22: Unsure how to make it clear that some letters are capitalized without marking every single instance -->
+                        <l><persName>St. Patrick</persName> was a <unclear reason="misspelling">useful</unclear> saint</l>
+                        <l>He frightened all the snakes away-</l>
+                        <l>I wish he'd try his art on <emph rend="underline">smoke</emph></l>
+                        <figure><!-- ws-10-11-22: The stamp can be marked as being between the two lines -->
+                           <figDesc>A single green three-leaf clover stamp.</figDesc>
+                        </figure>
+                        <l>Around the Hammermill some day !</l>
+                     </lg>
+                  </p>
+                  <figure> <!-- ws-10-11-22: While I'm positive it's optional, the placement of figures on a page would be an interesting problem to tackle -->
+                     <figDesc>A single green three-leaf clover stamp on the left of the page, accompagnied by a sketch of the Hammermill building billowing smoke in black on the right side of the page.</figDesc>
+                  </figure>
+                  <p>
+                     <hi rend='red-pen'>The Hammermill really <emph rend='underline'><unclear reason="illegible">does</unclear> smoke!</emph></hi> 
+                  </p>
+               </div>
+            </body>
+         </text>
+</TEI>
