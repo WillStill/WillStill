@@ -9,13 +9,21 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Behrend Travel Letters</title>
+                <meta charset="UTF-8"/>
+                <title><xsl:value-of select="//docTitle"/></title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="stylesheet" type="text/css" href="stiller_XSLT4.css"/>
+                <link rel="stylesheet" type="text/css" href="../style.css"/>
             </head>
             <body>
-                <h1>Behrend's Travel Adventures in France</h1>
-                <section id="toc">
+                <!--<h1 class="Title">The Founding of Penn State Behrend</h1>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="../analysis.html">Analysis</a>
+                    <a href="../gallery.html">Gallery</a>
+                    <a href="../about.html">About the Team</a>
+                </nav>
+                -->
+                <section id="contain">
                     <h2>Contents</h2>
                     <table>
                         <tr>
