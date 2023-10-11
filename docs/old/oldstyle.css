@@ -159,7 +159,7 @@ h2 {
   justify-content: center;
 }
 .column {
-  flex: 50%;
+  width: 50%;
 }
 .center {
     display:flex;
