@@ -48,46 +48,53 @@ h3 {
 /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
 
 @keyframes moveleft {
-    0% {
-        -webkit-transform: translate(15px,0);
-        -ms-transform: translate(15px,0);
+    from {
         transform: translate(15px,0);
     }
-    100% {
-        -webkit-transform: translate(0px);
-        -ms-transform: translate(0px);
+    to {
         transform: translate(0px);
     }
 }
 @keyframes moveup {
-    0% {
-        -webkit-transform: translate(0,15px);
-        -ms-transform: translate(0,15px);
+    from {
         transform: translate(0,15px);
     }
-    100% {
-        -webkit-transform: translate(0px);
-        -ms-transform: translate(0px);
+    to {
         transform: translate(0px);
     }
 }
 @keyframes fadein {
-    0% {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 1;
     }
 }
 @keyframes halffadein {
-    0% {
+    from {
         opacity: 0;
     }
-    100% {
+    to {
         opacity: 0.5;
     }
 }
-
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(30deg);
+    }
+}
+@keyframes rotate-reverse {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
 /* TOP LEFT BUTTON SECTION ===================================================================================================================== */
 
 /* 
@@ -222,12 +229,6 @@ a {
     overflow-x: hidden;
 }
 
-@media (min-width : 960px) {
-    .intro {
-
-    }
-}
-
 .intro h1 {
     margin: 0;
     letter-spacing: -.15vw;
@@ -240,12 +241,6 @@ a {
     font-size: 10.5vw;
 }
 
-@media (min-width : 960px) {
-    .intro h1 {
-        font-size: 4.3em;
-    }
-}
-
 .intro p {
     line-height: 1.2;
     font-size: 4.25vw;
@@ -256,6 +251,12 @@ a {
 }
 
 @media (min-width : 960px) {
+    .intro {
+
+    }
+    .intro h1 {
+        font-size: 4.3em;
+    }
     .intro p {
         font-size: 1.7em;
     }
@@ -279,52 +280,93 @@ a {
 
 /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
 
-.art {
+.work {
+    max-width: 100%;
     position: relative;
-    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
 }
-
-@media (min-width : 456px) {
-    div.project {
-        width: 25%;
-        display: inherit;
-    }
+.hexa {
+    background-image: url(./images/testimage.png);
+    background-size: cover;
+    width: 240px;
+    height: 240px;
+    resize: none;
+    max-width: 240px;
+    min-width: 240px;
+    max-height: 240px;
+    min-height: 240px;
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
-
-.project {
-    line-height: 0;
-    float: left;
-    overflow: hidden;
-    position: relative;
+/*  .project input {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
 }
-@media (max-width : 455px) {
-    .project {
-        width: 100%;
-        display: inline-block;
-    }
+.project input:checked ~ .wrap{
+    width: 100%;
+    animation: rotate 800ms ease forwards;
 }
-
-@media (min-width : 456px) {
-    .project img {
-        cursor: pointer;
-        width: 100%;
-        float: left;
-        height: auto;
-    }
+.wrap {
+    animation: rotate-reverse 800ms ease forwards;
+    /\*animation: rotate 800ms ease 200ms;
+    animation-fill-mode: both;*\/
 }
-@media (max-width : 455px) {
-    .project img {
-        width: 100%;
-        height: auto;
-    }
+.hext {
+    width: 0;
+    border-bottom: 30px solid;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
 }
-
+.hexm {
+    width: 104px;
+    height: 60px;
+    background-image: url(./images/testimage.png);
+}
+.hexb{
+    width: 0;
+    border-top: 30px solid;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    background-image: url(./images/testimage.png);
+}
+.box {
+    width: 100px;
+    color: red;
+}
+*/
 .pcontain {
     font-size: 0;
     width: 100% !important;
     margin: 1% auto 0 auto;
 }
 
+
+@media (max-width : 455px) {
+    /*.project {
+        width: 100%;
+        display: inline-block;
+    }*/
+    /*.project img {
+        width: 100%;
+        height: auto;
+    }*/
+}
+
+@media (min-width : 456px) {
+    /*div.project {
+        width: 25%;
+        display: inherit;
+    }*/
+    /*.project img {
+        cursor: pointer;
+        width: 100%;
+        float: left;
+        height: auto;
+    }*/
+}
 
 
 
