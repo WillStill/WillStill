@@ -130,7 +130,7 @@ h3 {
     margin-left: 20px;
     margin-top: 3vw;
   }
-}
+}o
 @media (min-width: 481px){
     .upbutton {
         font-size: 1.7em;
@@ -220,6 +220,7 @@ a {
 
 
 
+
 /* HOMETEXT SUBSECTION =================================================================== */
 
 
@@ -286,6 +287,26 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
+.mask {
+
+    display: flex;
+}
+.mask{
+    
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyMDBweCIgaGVpZ2h0PSIyMDBweCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwMCAyMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjEzLjQ5OSw0OS44NzYgOTkuODg3LDAgMTg2LjI4NCw0OS44NzkgMTg2LjI4NCwxNDkuNjM1IDk5Ljg4NywxOTkuNTE2IDEzLjQ5OSwxNDkuNjMgIi8+Cjwvc3ZnPg==);
+    -webkit-mask-repeat: no-repeat;
+    width: 25%;
+    transition: all 1000ms ease;
+}
+
+.mask:hover {
+    transform:rotate(90deg);
+/*    animation: moveleft 1000ms ease 25000ms, halffadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 25000ms;*/
+    animation-fill-mode: forwards;
+   
+
+}
+
 .hexa {
     background-image: url(./images/testimage.png);
     background-size: cover;
@@ -345,22 +366,22 @@ a {
 
 
 @media (max-width : 455px) {
-    /*.project {
+/*.project {
         width: 100%;
         display: inline-block;
     }*/
-    /*.project img {
+/*.project img {
         width: 100%;
         height: auto;
     }*/
 }
 
 @media (min-width : 456px) {
-    /*div.project {
+/*div.project {
         width: 25%;
         display: inherit;
     }*/
-    /*.project img {
+/*.project img {
         cursor: pointer;
         width: 100%;
         float: left;

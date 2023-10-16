@@ -272,3 +272,8 @@ body {
         font-size: 26px;
     }
 }
+
+
+.mask img {
+    width: 300px;
+}
