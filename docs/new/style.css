@@ -304,33 +304,41 @@ main ul, main ol {
 
 /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
 
-.work {
-    max-width: 100%;
+/*.work {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-}
-.mask {
+}*/
 
-    display: flex;
+.work a {
+    font-size: 0;
+    display: block;
 }
-.mask {
 
-    -webkit-mask-image: url(images/hexagon.svg);
+.work a img {
+    max-width: 25%;
+}
+
+.mask {
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>');
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>');
+    mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    width: 25%;
-    transition: all 1000ms ease;
+    width: 100%;
+    height: auto;
 }
 
-.mask:hover {
+
+
+/*.mask:hover {
     transform: rotate(90deg);
-    /*    animation: moveleft 1000ms ease 25000ms, halffadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 25000ms;*/
+    /\*    animation: moveleft 1000ms ease 25000ms, halffadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 25000ms;*\/
     animation-fill-mode: forwards;
 
 
-}
+}*/
 
-.hexa {
+/*.hexa {
     background-image: url(./images/testimage.png);
     background-size: cover;
     width: 240px;
@@ -341,7 +349,8 @@ main ul, main ol {
     max-height: 240px;
     min-height: 240px;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-}
+}*/
+
 /*  .project input {
     height: 100%;
     width: 100%;
