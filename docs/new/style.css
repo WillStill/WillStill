@@ -304,39 +304,32 @@ main ul, main ol {
 
 /* PROJECT IMAGES SHOULD ALWAYS BE A SQUARE */
 
-/*.work {
-    position: relative;
+.work {
     display: flex;
     flex-wrap: wrap;
-}*/
+}
 
 .work a {
     font-size: 0;
-    display: block;
+    display: contents;
 }
 
-.work a img {
-    max-width: 25%;
-}
-
-.mask {
-    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>');
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50"/></svg>');
+.maskedImg {
+    /* ONLY USE DATA URI FILES */
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50"/></svg>');
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50"/></svg>');
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    width: 100%;
+    width: 25%;
     height: auto;
+    transition: transform 0.5s ease; /* Add transition for smooth animation */
 }
 
 
 
-/*.mask:hover {
-    transform: rotate(90deg);
-    /\*    animation: moveleft 1000ms ease 25000ms, halffadein 1000ms cubic-bezier(0.47, 0, 0.745, 0.715) 25000ms;*\/
-    animation-fill-mode: forwards;
-
-
-}*/
+.maskedImg:hover {
+    transform: rotate(120deg);
+}
 
 /*.hexa {
     background-image: url(./images/testimage.png);
