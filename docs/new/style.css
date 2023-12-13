@@ -182,6 +182,15 @@ a:hover {
     color: #2191FB;
 }
 
+@media (max-width: 360px){
+    .icons{
+        writing-mode: horizontal-tb;
+    }
+    .nav {
+        flex-direction: column;
+    }
+}
+
 /* HOMEIMAGES SUBSECTION =================================================================== */
 
 .self {
