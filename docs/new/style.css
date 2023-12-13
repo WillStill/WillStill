@@ -309,7 +309,11 @@ main ol {
     justify-content: space-between;
 }
 
-.work .instance {
+.work a {
+    margin: 0.8em 0;
+}
+
+.instance {
     font-size: 0;
     display: contents;
 }
@@ -352,24 +356,25 @@ main ol {
 .ptL,
 .ptS {
     font-family: Arial, sans-serif;
-    fill: white;
+    fill: black;
+    font-weight: 600;
     text-anchor: middle;
     alignment-baseline: middle;
     pointer-events: none;
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    /*text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;*/
     opacity: 0;
     
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.ptL {
+.ptL, .ptS {
     font-size: 28px;
 }
 
-.ptS {
+/*.ptS {
     font-size: 14px;
 }
-
+*/
 .ClockRot {
     stroke: #2191FB;
     transform-origin: center center; /* Set the transformation origin to the center */
