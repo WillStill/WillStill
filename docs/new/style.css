@@ -14,7 +14,7 @@ body {
     /* WS:9/3/22: Overflow should exist so that page is accessible.*/
     /*overflow-x: hidden;*/
     margin: 0 auto 0 auto;
-    min-width: 320px;
+    min-width: 340px;
     max-width: 960px;
 }
 
@@ -33,11 +33,6 @@ a:visited {
 
 p {
     color: #1D1A11;
-}
-
-main {
-    width: 95%;
-    margin: 1% auto 2% auto;
 }
 
 /* ANIMATIONS SECTION ===================================================================================================================== */
@@ -259,6 +254,9 @@ a:hover {
 /* GENERAL MAIN ========================================================================================================================== */
 
 main {
+    width: 95%;
+    margin: 3% auto 2% auto;
+
     font-size: 14px;
     opacity: 0;
     animation: moveup 600ms ease 400ms, fadein 600ms cubic-bezier(0.47, 0, 0.745, 0.715) 400ms;
@@ -281,7 +279,8 @@ main p {
     margin: 0em 0 0.27em 0;
 }
 
-main ul, main ol {
+main ul,
+main ol {
     margin: 0.6em 0 0.83em 0;
 }
 
@@ -307,113 +306,95 @@ main ul, main ol {
 .work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.work a {
+.work .instance {
     font-size: 0;
     display: contents;
 }
 
-.maskedImg {
-    /* ONLY USE DATA URI FILES */
-    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50"/></svg>');
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50"/></svg>');
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-    width: 25%;
+.instance {
+    width: 100%;
+}
+
+.projobj {
+    width: 25vw;
     height: auto;
-    transition: transform 0.5s ease; /* Add transition for smooth animation */
 }
 
-
-
-.maskedImg:hover {
-    transform: rotate(120deg);
-}
-
-/*.hexa {
-    background-image: url(./images/testimage.png);
-    background-size: cover;
-    width: 240px;
-    height: 240px;
-    resize: none;
-    max-width: 240px;
-    min-width: 240px;
-    max-height: 240px;
-    min-height: 240px;
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-}*/
-
-/*  .project input {
+.projobj svg {
+    width: 100%;
     height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 5;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projimage {
+    fill: #ED2024;
+
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.projborder {
+    fill: none;
+    stroke: black;
+    stroke-width: 18;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.ptL,
+.ptS {
+    font-family: Arial, sans-serif;
+    fill: white;
+    text-anchor: middle;
+    alignment-baseline: middle;
+    pointer-events: none;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
     opacity: 0;
+    
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-.project input:checked ~ .wrap{
-    width: 100%;
-    animation: rotate 800ms ease forwards;
+
+.ptL {
+    font-size: 28px;
 }
-.wrap {
-    animation: rotate-reverse 800ms ease forwards;
-    /\*animation: rotate 800ms ease 200ms;
-    animation-fill-mode: both;*\/
+
+.ptS {
+    font-size: 14px;
 }
-.hext {
-    width: 0;
-    border-bottom: 30px solid;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
+
+.ClockRot {
+    stroke: #2191FB;
+    transform-origin: center center; /* Set the transformation origin to the center */
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
 }
-.hexm {
-    width: 104px;
-    height: 60px;
-    background-image: url(./images/testimage.png);
-}
-.hexb{
-    width: 0;
-    border-top: 30px solid;
-    border-left: 52px solid transparent;
-    border-right: 52px solid transparent;
-    background-image: url(./images/testimage.png);
-}
-.box {
-    width: 100px;
-    color: red;
-}
-*/
-.pcontain {
-    font-size: 0;
-    width: 100% !important;
-    margin: 1% auto 0 auto;
+
+.CounterRot {
+    transform-origin: center center; /* Set the transformation origin to the center */
+    transition: filter .5s ease;
+    filter: blur(2px);
 }
 
 
-@media (max-width : 455px) {
-/*.project {
-        width: 100%;
-        display: inline-block;
-    }*/
-/*.project img {
-        width: 100%;
-        height: auto;
-    }*/
+@media (max-width : 360px) {
+    .projobj {
+        width: 90px;
+    }
 }
 
-@media (min-width : 456px) {
-/*div.project {
-        width: 25%;
-        display: inherit;
-    }*/
-/*.project img {
-        cursor: pointer;
-        width: 100%;
-        float: left;
-        height: auto;
-    }*/
+@media (min-width : 960px) {
+    .projobj {
+        width: 241px;
+    }
 }
-
 
 
 /* BOTTOM SECTION ========================================================================================================================== */
