@@ -358,25 +358,31 @@ main ol {
     stroke-linejoin: round;
     stroke-miterlimit: 10;
 
-    transition: transform 0.5s ease;
+    transition: transform 400ms ease-out;
     transform-origin: center center;
 }
 
 .ptL,
 .ptS {
     font-family: Arial, sans-serif;
-    fill: black;
     font-weight: 600;
+    fill: black;
+    /*fill: #2191FB;*/
+    /*text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;*/
+    
+    font-size: 28px;
+    
     text-anchor: middle;
     alignment-baseline: middle;
     pointer-events: none;
-    /*text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;*/
+    
     opacity: 0;
     
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 300ms cubic-bezier(0.47, 0, 0.745, 0.715), transform 800ms ease;
+    /*animation: moveup 800ms ease, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715);*/
 }
 
-.ptL, .ptS {
+.ptL{
     font-size: 28px;
 }
 
@@ -388,13 +394,13 @@ main ol {
     stroke: #2191FB;
     transform-origin: center center; /* Set the transformation origin to the center */
     transform: rotate(360deg);
-    transition: transform 0.5s ease;
+    transition: transform 800ms ease;
 }
 
 .CounterRot {
     transform-origin: center center; /* Set the transformation origin to the center */
-    transition: filter .5s ease;
-    filter: blur(2px);
+    transition: filter 800ms ease;
+    /*filter: blur(2px);*/
 }
 
 
