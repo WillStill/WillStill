@@ -344,8 +344,6 @@ main ol {
 }
 
 .projimage {
-    fill: #ED2024;
-
     transition: transform 0.5s ease;
     transform-origin: center center;
 }
@@ -359,13 +357,13 @@ main ol {
     stroke-miterlimit: 10;
 
     /*Rotate Back*/
-    transition: transform 800ms ease-out;
+    transition: transform 800ms ease-in;
     transform-origin: center center;
 }
 
 .ClockRot {
     /*Border Rotate on Hover*/
-    stroke: #2191FB;
+    /*stroke: #2191FB;*/
     transform-origin: center center; /* Set the transformation origin to the center */
     transform: rotate(360deg);
     transition: transform 600ms ease-in-out;
@@ -386,7 +384,6 @@ main ol {
     text-anchor: middle;
     alignment-baseline: middle;
     pointer-events: none;
-    
     opacity: 0;
 
     /*Back*/
