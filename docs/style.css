@@ -304,12 +304,24 @@ main ol {
 
 .split {
     display: flex;
-    align-items: baseline;
     justify-content: flex-start;
 }
 
 .apart {
     justify-content: space-between;
+    align-items: center;
+}
+
+.together {
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+img {
+    max-width: 300px;
+    margin: 0.27em;
+    border: 1px solid black;
 }
 
 /* RESUME ========================================================================================================================== */
