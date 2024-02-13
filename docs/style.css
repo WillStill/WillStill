@@ -310,6 +310,7 @@ main ol {
 .apart {
     justify-content: space-between;
     align-items: center;
+    margin: -2.67em 0 0.47em;
 }
 
 .together {
@@ -317,25 +318,22 @@ main ol {
     align-items: baseline;
 }
 
-
 img {
-    max-width: 300px;
-    margin: 0.27em;
+    max-height: 460px;
+    margin: 0 0.97em;
     border: 1px solid black;
 }
 
 /* RESUME ========================================================================================================================== */
 
 
-/* MID SECTION ============================================================================================================================== */
+/* ABOUT SECTION ========================================================================================================================== */
 
-/* 
-#vision {
-  height: 100vh;
-  background: linear-gradient(200deg, #fdfdfa, #ecf5e9, #d3eee0, #b5e7e1, #99deea);
+#imgdiv p {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
 }
- */
-
 
 /* PROJECT SECTION ========================================================================================================================== */
 

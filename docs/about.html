@@ -28,18 +28,27 @@
                     <p> My enthusiasm lies in constructing and delving into new technologies. Taking the time to thoroughly research, understand, and explore the potential of programs is a process that allows me to gain a deep understanding of tools. The challenge of researching and building from the ground up is one of my most effective methods to bring innovative solutions to life. </p>
                     <p> Currently, I am on the lookout for a Ph.D. program in the field of Data Science and Information Technology, aiming to start in Fall 2023. If you have a challenge or wish to connect, feel free to reach out to me at <a href="mailto:stillewill54@gmail.com">stillewill54@gmail.com</a>. </p>
                 </div>
-                <img src="images/Professional.jpg" alt="William &quot;Will&quot; Stiller" title="William &quot;Will&quot; Stiller">
+                <div id="imgdiv">
+                    <img id="Will" src="images/Professional.jpg" alt="William &quot;Will&quot; Stiller" title="William &quot;Will&quot; Stiller">
+                </div>
             </div>
         </main>
         <script>
             const date = new Date();
             let day = date.getDate();
             let month = date.getMonth();
-            let currentDate = `${month} - $ {day}`;
+            let currentDate = `${month}-${day}`;
             
             if (currentDate == '3-1') {
                 console.log('April Fools!');
+                document.getElementById("Will").src = Will.src.replace("Professional", "AprilFools");
+                
+                const imgdiv = document.getElementById('imgdiv');
+                const p = document.createElement("p");
+                p.innerHTML = 'April Fools!';
+                imgdiv.appendChild(p);
             }
-            console.log(currentDate, day, month);</script>
+            console.log(currentDate);
+        </script>
     </body>
 </html>
