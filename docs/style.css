@@ -334,7 +334,7 @@ main ol {
 
 /* RESUME ========================================================================================================================== */
 
-section p, section .apart:has(> p){
+section:not(.intro) p, section .apart:has(> p){
     margin: 0 0 0 0;
 }
 
