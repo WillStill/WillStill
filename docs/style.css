@@ -419,21 +419,21 @@ section:not(.intro) p, section .apart:has(> p){
 
     font-size: 28px;
 
-    transform: translate(0, 15px);
+    /*transform: translate(0, 15px);*/
 
     text-anchor: middle;
     alignment-baseline: middle;
     pointer-events: none;
-    opacity: 0;
+    /*opacity: 0;*/
 
     /*Back*/
     transition: transform 800ms ease-in, opacity 800ms ease-in;
-    /*animation: moveup 800ms ease, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715);*/
+    animation: moveup 800ms ease, fadein 800ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .MoveUp {
     /*Forward*/
-    transform: translate(0);
+    transform   : translate(0);
     transition: transform 300ms ease-in, opacity 300ms cubic-bezier(0.47, 0, 0.745, 0.715)
 }
 
