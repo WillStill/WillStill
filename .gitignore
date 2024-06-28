@@ -12,6 +12,7 @@ Thumbs.db
 .idea/
 venv/
 __pycache__/
+.vs
 
 # Default ignored files
 /shelf/
