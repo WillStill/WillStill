@@ -195,14 +195,21 @@ a:hover {
 
 .self {
     z-index: -1;
-    opacity: 45%;
-    width: 100%;
+    opacity: 15%;
+    width: 48%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     object-position: 25% 0;
     object-fit: cover;
+	transform: scaleX(-1);
+}
+
+@media (max-width : 960px) {
+    .self {
+        width: 65%;
+    }
 }
 
 .cat {
