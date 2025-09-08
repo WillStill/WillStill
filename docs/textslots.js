@@ -4,19 +4,15 @@
 
 var refBtn = document.getElementById('refBtn');
 var wordlist = [
-    "Secretly making visualizations.",
-    "Programming is neat.",
-    "How to Marquee?",
-    "Connoisseur of XML.",
-    "Check out my Github!",
-    "Learning SQL.",
-    "Javascript is your friend.",
-    "Hidden secrets everywhere!",
+    "Making Visualizations.",
+	"PSU Graduate",
+    "How to Marquee in HTML?",
+    "Appreciator of XML.",
+    "Check out my Github Projects!",
     "Consider User Experience.",
-    "Python forever!",
-    "Accessibility is key.",
-    "Creative in many ways.",
-    "I really like R.",
+    "Python Forever!",
+    "HDF5 is Surprisingly Versatile.",
+    "I enjoy working in R.",
     "Can you see this?",
 ]
 
