@@ -204,6 +204,7 @@ a:hover {
     object-position: 25% 0;
     object-fit: cover;
 	transform: scaleX(-1);
+	filter: brightness(0.8);
 }
 
 @media (max-width : 960px) {
